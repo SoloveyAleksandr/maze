@@ -1,0 +1,2341 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": false,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "a5dc856a-2e80-4232-a85a-3671fccc2109",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "labirint",
+    "author": "",
+    "windowWidth": 800,
+    "windowHeight": 360,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "authorIds": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\player.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/floor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\floor.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/door-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\door-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/door-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\door-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/door-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\door-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/door-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\door-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/door-2-side.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\door-2-side.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/colision_big_horizontal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\colision_big_horizontal.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/colision_big_vertical.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\colision_big_vertical.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/colision_small_horizontal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\colision_small_horizontal.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walls/colision_small_vertical.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\walls\\colision_small_vertical.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/labirints/lab-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\labirints\\lab-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/concrete_wall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\concrete_wall.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/labirints/5 by 5 orthogonal maze.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\labirints\\5 by 5 orthogonal maze.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/stop.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\stop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/go-down 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\go-down 1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/go-down 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\go-down 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop-dowd 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop-dowd 1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop-dowd 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop-dowd 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop-dowd 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop-dowd 3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/down/stop-dowd 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\down\\stop-dowd 4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/character/Rectangle69.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\character\\Rectangle69.png",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "startMenu",
+      "name": "startMenu",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 10933336,
+          "ambientLightColorG": 150995054,
+          "ambientLightColorR": 1869182049,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 0,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "labirint",
+      "name": "labirint",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 0,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 0,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.26999999999999985,
+        "windowMask": false
+      },
+      "objectsGroups": [
+        {
+          "name": "walls",
+          "objects": [
+            {
+              "name": "door_1"
+            },
+            {
+              "name": "door_2"
+            },
+            {
+              "name": "door_3"
+            },
+            {
+              "name": "door_4"
+            },
+            {
+              "name": "door_2_side"
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1227,
+          "layer": "",
+          "locked": false,
+          "name": "MAZE_1",
+          "persistentUuid": "ed61e00b-868b-4393-a4d5-55ddd74e1029",
+          "width": 1227,
+          "x": 280,
+          "y": -504,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PLAYER",
+          "persistentUuid": "bfa3b63f-da7d-4c97-91b5-59ba333886c8",
+          "width": 0,
+          "x": 872,
+          "y": -477,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 6798,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "persistentUuid": "e725e4e4-6265-4d5d-80db-d9342c23d612",
+          "width": 6343,
+          "x": -2312,
+          "y": -3173,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Lighting",
+          "locked": false,
+          "name": "NewObject3",
+          "persistentUuid": "518bc613-b6c8-4f9b-9b75-beb06c8e3cb2",
+          "width": 0,
+          "x": 885,
+          "y": 995,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "PLAYER",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 1000,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 0,
+              "customIsometryAngle": 30,
+              "deceleration": 10000,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "name": "TopDownMovement",
+              "rotateObject": true,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "TopDown"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\character\\Rectangle69.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30,
+                        "y": 30
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\walls\\door-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 40.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 41.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 401.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 401.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 401,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 119.5
+                          },
+                          {
+                            "x": 400,
+                            "y": 119.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 401,
+                            "y": 321.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 321.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 400,
+                            "y": 440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\walls\\door-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 39.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 39.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 400.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 399.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 0
+                          },
+                          {
+                            "x": 40.33333206176758,
+                            "y": 119.66666412353516
+                          },
+                          {
+                            "x": 0,
+                            "y": 119
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 320
+                          },
+                          {
+                            "x": 40,
+                            "y": 319.5833435058594
+                          },
+                          {
+                            "x": 39.61538314819336,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 400,
+                            "y": 320.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 320
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 399.5,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 399.1666564941406,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 119
+                          },
+                          {
+                            "x": 400,
+                            "y": 118.75
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\walls\\door-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 399.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 400.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 401,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 120.5
+                          },
+                          {
+                            "x": 402,
+                            "y": 117.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 41,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 118.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 119.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 120,
+                            "y": 0
+                          },
+                          {
+                            "x": 120,
+                            "y": 38.21428680419922
+                          },
+                          {
+                            "x": 0,
+                            "y": 38.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 320.3571472167969
+                          },
+                          {
+                            "x": 40,
+                            "y": 319.6428527832031
+                          },
+                          {
+                            "x": 40.71428680419922,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 320,
+                            "y": 0.3571428656578064
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 38.92856979370117
+                          },
+                          {
+                            "x": 319.28570556640625,
+                            "y": 39.64285659790039
+                          }
+                        ],
+                        [
+                          {
+                            "x": 399.28570556640625,
+                            "y": 320.3571472167969
+                          },
+                          {
+                            "x": 440,
+                            "y": 320.3571472167969
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 400,
+                            "y": 440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\walls\\door-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 320,
+                            "y": 400.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 400.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 319,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 401,
+                            "y": 319.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 321.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 399,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 399.5
+                          },
+                          {
+                            "x": 120,
+                            "y": 401.5
+                          },
+                          {
+                            "x": 120,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 319.5
+                          },
+                          {
+                            "x": 40,
+                            "y": 320.5
+                          },
+                          {
+                            "x": 39,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 0
+                          },
+                          {
+                            "x": 39.28571319580078,
+                            "y": 120.35713958740234
+                          },
+                          {
+                            "x": 0,
+                            "y": 120.35713958740234
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 120,
+                            "y": 0
+                          },
+                          {
+                            "x": 120.71428680419922,
+                            "y": 39.64285659790039
+                          },
+                          {
+                            "x": 0,
+                            "y": 39.64285659790039
+                          }
+                        ],
+                        [
+                          {
+                            "x": 320,
+                            "y": 0.3571428656578064
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 38.92856979370117
+                          },
+                          {
+                            "x": 320.71429443359375,
+                            "y": 39.64285659790039
+                          }
+                        ],
+                        [
+                          {
+                            "x": 400,
+                            "y": 0.3571428656578064
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 119.64286041259766
+                          },
+                          {
+                            "x": 399.28570556640625,
+                            "y": 118.92857360839844
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "door_2_side",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\walls\\door-2-side.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 400.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 399.5
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 402,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 440
+                          },
+                          {
+                            "x": 400,
+                            "y": 440
+                          }
+                        ],
+                        [
+                          {
+                            "x": 320,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 0
+                          },
+                          {
+                            "x": 440,
+                            "y": 39.5
+                          },
+                          {
+                            "x": 319,
+                            "y": 38.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 120,
+                            "y": 0
+                          },
+                          {
+                            "x": 120,
+                            "y": 37.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 40.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 39,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 120.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 119.5
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 320.5
+                          },
+                          {
+                            "x": 41,
+                            "y": 321.5
+                          },
+                          {
+                            "x": 39,
+                            "y": 440
+                          },
+                          {
+                            "x": 0,
+                            "y": 440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "colision_big_horizontal",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\walls\\colision_big_horizontal.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "colision_big_vertical",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\walls\\colision_big_vertical.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "colision_small_horizontal",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\walls\\colision_small_horizontal.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "floor",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\floor.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "colision_small_vertical",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\walls\\colision_small_vertical.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "light",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "height": 32,
+          "name": "NewObject",
+          "tags": "",
+          "texture": "sprites\\concrete_wall.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "name": "MAZE_1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\labirints\\5 by 5 orthogonal maze.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 2.1052632331848145,
+                            "y": 0
+                          },
+                          {
+                            "x": 1.9736841917037964,
+                            "y": 81.98807525634766
+                          },
+                          {
+                            "x": 0,
+                            "y": 82
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 33.81578826904297,
+                            "y": 0
+                          },
+                          {
+                            "x": 33.68421173095703,
+                            "y": 1.8564966917037964
+                          },
+                          {
+                            "x": 0,
+                            "y": 1.8564966917037964
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.157894134521484,
+                            "y": 0
+                          },
+                          {
+                            "x": 82,
+                            "y": 0
+                          },
+                          {
+                            "x": 81.97368621826172,
+                            "y": 1.988075613975525
+                          },
+                          {
+                            "x": 48.55263137817383,
+                            "y": 2.119654655456543
+                          }
+                        ],
+                        [
+                          {
+                            "x": 47.894737243652344,
+                            "y": 0
+                          },
+                          {
+                            "x": 50.1315803527832,
+                            "y": 0
+                          },
+                          {
+                            "x": 50,
+                            "y": 17.645971298217773
+                          },
+                          {
+                            "x": 47.76315689086914,
+                            "y": 16.593338012695312
+                          }
+                        ],
+                        [
+                          {
+                            "x": 31.973684310913086,
+                            "y": 15.672286033630371
+                          },
+                          {
+                            "x": 49.605262756347656,
+                            "y": 15.803865432739258
+                          },
+                          {
+                            "x": 50,
+                            "y": 17.700000762939453
+                          },
+                          {
+                            "x": 31.842105865478516,
+                            "y": 17.777549743652344
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.921052932739258,
+                            "y": 15.803865432739258
+                          },
+                          {
+                            "x": 18.421052932739258,
+                            "y": 15.935443878173828
+                          },
+                          {
+                            "x": 18.289474487304688,
+                            "y": 49.8828125
+                          },
+                          {
+                            "x": 15.6578950881958,
+                            "y": 49.8828125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 16.842105865478516,
+                            "y": 31.988075256347656
+                          },
+                          {
+                            "x": 65.39473724365234,
+                            "y": 31.988075256347656
+                          },
+                          {
+                            "x": 65.13157653808594,
+                            "y": 34.224918365478516
+                          },
+                          {
+                            "x": 17.105262756347656,
+                            "y": 34.09333801269531
+                          }
+                        ],
+                        [
+                          {
+                            "x": 64.07894897460938,
+                            "y": 15.935443878173828
+                          },
+                          {
+                            "x": 66.31578826904297,
+                            "y": 15.935443878173828
+                          },
+                          {
+                            "x": 65.78947448730469,
+                            "y": 65.80386352539062
+                          },
+                          {
+                            "x": 63.94736862182617,
+                            "y": 64.75123596191406
+                          }
+                        ],
+                        [
+                          {
+                            "x": 32.105262756347656,
+                            "y": 32.90913009643555
+                          },
+                          {
+                            "x": 33.94736862182617,
+                            "y": 33.040706634521484
+                          },
+                          {
+                            "x": 34.078948974609375,
+                            "y": 49.7512321472168
+                          },
+                          {
+                            "x": 31.842105865478516,
+                            "y": 49.8828125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 47.894737243652344,
+                            "y": 47.90913009643555
+                          },
+                          {
+                            "x": 50.1315803527832,
+                            "y": 48.17228698730469
+                          },
+                          {
+                            "x": 50.1315803527832,
+                            "y": 64.8828125
+                          },
+                          {
+                            "x": 47.6315803527832,
+                            "y": 64.75123596191406
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.789473533630371,
+                            "y": 64.09333801269531
+                          },
+                          {
+                            "x": 65.2631607055664,
+                            "y": 63.69860076904297
+                          },
+                          {
+                            "x": 65.78947448730469,
+                            "y": 65.80386352539062
+                          },
+                          {
+                            "x": 15.6578950881958,
+                            "y": 66.06702423095703
+                          }
+                        ],
+                        [
+                          {
+                            "x": 32.105262756347656,
+                            "y": 64.8828125
+                          },
+                          {
+                            "x": 34.078948974609375,
+                            "y": 64.8828125
+                          },
+                          {
+                            "x": 33.94736862182617,
+                            "y": 82
+                          },
+                          {
+                            "x": 31.447368621826172,
+                            "y": 81.98807525634766
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 79.75123596191406
+                          },
+                          {
+                            "x": 33.421051025390625,
+                            "y": 79.8828125
+                          },
+                          {
+                            "x": 33.421051025390625,
+                            "y": 82
+                          },
+                          {
+                            "x": 0,
+                            "y": 82
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.02631759643555,
+                            "y": 79.75123596191406
+                          },
+                          {
+                            "x": 81.31578826904297,
+                            "y": 79.8828125
+                          },
+                          {
+                            "x": 82,
+                            "y": 82
+                          },
+                          {
+                            "x": 47.894737243652344,
+                            "y": 82
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80,
+                            "y": 1.3301808834075928
+                          },
+                          {
+                            "x": 82,
+                            "y": 0
+                          },
+                          {
+                            "x": 82,
+                            "y": 82
+                          },
+                          {
+                            "x": 79.7368392944336,
+                            "y": 81.3301773071289
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NewObject2",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 200,
+            "color": "172;255;177",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "NewObject3",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "130;255;128",
+            "debugMode": false,
+            "texture": ""
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "START",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "MAZE_1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "camera",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "PLAYER",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "0.3",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseY"
+                      },
+                      "parameters": [
+                        "",
+                        "<",
+                        "PLAYER.Y() - 15",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlatformBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseY"
+                      },
+                      "parameters": [
+                        "",
+                        ">",
+                        "PLAYER.Y() + 15",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateDownKey"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseX"
+                      },
+                      "parameters": [
+                        "",
+                        "<",
+                        "PLAYER.X() - 15",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseX"
+                      },
+                      "parameters": [
+                        "",
+                        ">",
+                        "PLAYER.X() + 15",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "collision",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "MAZE_1",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "light",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "light",
+                    "0",
+                    "0",
+                    "\"Lighting\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "light",
+                    "=",
+                    "PLAYER.X()",
+                    "=",
+                    "PLAYER.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 32,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 24,
+          "ambientLightColorG": 24,
+          "ambientLightColorR": 24,
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
