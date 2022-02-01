@@ -9,7 +9,7 @@
   "properties": {
     "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
-    "orientation": "landscape",
+    "orientation": "portrait",
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "a5dc856a-2e80-4232-a85a-3671fccc2109",
@@ -19,8 +19,8 @@
     "version": "1.0.0",
     "name": "labirint",
     "author": "",
-    "windowWidth": 800,
-    "windowHeight": 360,
+    "windowWidth": 360,
+    "windowHeight": 800,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -53,15 +53,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "sprites/player.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sprites\\player.png",
-        "smoothed": true,
-        "userAdded": true
-      },
       {
         "alwaysLoaded": false,
         "file": "sprites/floor.png",
@@ -154,20 +145,11 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "sprites/labirints/lab-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sprites\\labirints\\lab-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "sprites/concrete_wall.png",
         "kind": "image",
         "metadata": "",
         "name": "sprites\\concrete_wall.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -277,6 +259,150 @@
         "name": "sprites\\character\\Rectangle69.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/Group 25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\Group 25.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/Rectangle 72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\Rectangle 72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/wispShadow/Ellipse 2-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\wispShadow\\Ellipse 2-5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/UI/playBTN.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\UI\\playBTN.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/UI/settingsBTN.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\UI\\settingsBTN.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "sound/click1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sound\\click1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/controller/controllerBody.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\controller\\controllerBody.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/controller/controllerJoystick.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\controller\\controllerJoystick.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/controller/mouseDistanceCheck.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\controller\\mouseDistanceCheck.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/controller/controllerCenter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\controller\\controllerCenter.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject2-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -308,14 +434,1060 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1,
+        "zoomFactor": 1.3504999759674063,
         "windowMask": false
       },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "objectsGroups": [
+        {
+          "name": "UI",
+          "objects": [
+            {
+              "name": "playBTN"
+            },
+            {
+              "name": "settingsBTN"
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "vispMoovIsUp",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1367,
+          "layer": "",
+          "locked": false,
+          "name": "bg",
+          "persistentUuid": "3838e6a1-36fc-4252-9bc3-ed8445fbbb0d",
+          "width": 1320,
+          "x": -478,
+          "y": -281,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "wisp",
+          "persistentUuid": "d28e524f-9c85-4202-aa02-2530926462c4",
+          "width": 0,
+          "x": 173,
+          "y": 427,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Lighting",
+          "locked": false,
+          "name": "wispLight",
+          "persistentUuid": "3bb43751-7213-4fd6-b968-537bab0c7cf6",
+          "width": 0,
+          "x": -495,
+          "y": 976,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "floor",
+          "persistentUuid": "7cb08875-5310-4aa1-a6cf-f8f5fed69634",
+          "width": 0,
+          "x": -6,
+          "y": 634,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "wispShadow",
+          "persistentUuid": "9393da59-88a3-4b92-932c-4590faeb838d",
+          "width": 0,
+          "x": 172.5,
+          "y": 673.5,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "settingsBTN",
+          "persistentUuid": "31d2fb99-0302-43aa-b76b-a3ab1f96bc43",
+          "width": 0,
+          "x": 15,
+          "y": 15,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "playBTN",
+          "persistentUuid": "86929d8f-21a7-43a8-9a69-23c0335fe267",
+          "width": 0,
+          "x": 258,
+          "y": 19,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 520,
+          "name": "bg",
+          "tags": "",
+          "texture": "sprites\\concrete_wall.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 520,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ]
+        },
+        {
+          "name": "floor",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\Group 25.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wisp",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\Rectangle 72.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 106,
+                        "y": 106
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wispLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 400,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "wispShadow",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.27000001072883606,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 81.5,
+                        "y": 73.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 80.5,
+                        "y": 72.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74.5,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 59.5,
+                        "y": 51.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 47.5,
+                        "y": 39.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 35.5,
+                        "y": 27.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.27000001072883606,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 35.5,
+                        "y": 27.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 47.5,
+                        "y": 39.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 59.5,
+                        "y": 51.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74.5,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 80.5,
+                        "y": 72.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\wispShadow\\Ellipse 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 81.5,
+                        "y": 73.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "playBTN",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\playBTN.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "settingsBTN",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\settingsBTN.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "btnLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 200,
+            "color": "160;160;160",
+            "debugMode": false,
+            "texture": ""
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "floor",
+                    "=",
+                    "SceneWindowWidth()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "floor",
+                    "=",
+                    "0",
+                    "=",
+                    "SceneWindowHeight() - floor.Height()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "wisp",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "floor.BoundingBoxTop() - 175\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "playBTN",
+                    "=",
+                    "SceneWindowWidth() - playBTN.Width() - 15",
+                    "=",
+                    "15\n\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "settingsBTN",
+                    "=",
+                    "15",
+                    "=",
+                    "15\n\n"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "1",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "btnLight",
+                    "playBTN.BoundingBoxCenterX()",
+                    "playBTN.BoundingBoxCenterY()",
+                    "\"Lighting\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "1",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "btnLight",
+                    "settingsBTN.BoundingBoxCenterX()",
+                    "settingsBTN.BoundingBoxCenterY()",
+                    "\"Lighting\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "wispLight",
+                    "=",
+                    "wisp.BoundingBoxCenterX()",
+                    "=",
+                    "wisp.BoundingBoxCenterY()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "wispShadow",
+                    "=",
+                    "wisp.BoundingBoxCenterX()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "vispMoovIsUp",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "wisp",
+                    "0",
+                    "-8",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "wispShadow",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "vispMoovIsUp",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "wisp",
+                    "0",
+                    "8",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "wispShadow",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BoundingBoxCenterY"
+                  },
+                  "parameters": [
+                    "wisp",
+                    "<=",
+                    "floor.BoundingBoxTop() - 185"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "vispMoovIsUp",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BoundingBoxCenterY"
+                  },
+                  "parameters": [
+                    "wisp",
+                    ">=",
+                    "floor.BoundingBoxTop() - 175"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "vispMoovIsUp",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "handle click",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "UI",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "sound\\click1.ogg",
+                    "",
+                    "50",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "playBTN",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "sound\\click1.ogg",
+                    "",
+                    "50",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 10933336,
@@ -338,15 +1510,42 @@
             }
           ],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 46,
+          "ambientLightColorG": 46,
+          "ambientLightColorR": 46,
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": -2147483632,
+          "ambientLightColorG": 6029040,
+          "ambientLightColorR": 8091496,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ]
     },
     {
       "b": 0,
       "disableInputWhenNotFocused": true,
-      "mangledName": "labirint",
-      "name": "labirint",
+      "mangledName": "game",
+      "name": "game",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -365,42 +1564,42 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.26999999999999985,
+        "zoomFactor": 0.7360000114440927,
         "windowMask": false
       },
       "objectsGroups": [
         {
           "name": "walls",
-          "objects": [
-            {
-              "name": "door_1"
-            },
-            {
-              "name": "door_2"
-            },
-            {
-              "name": "door_3"
-            },
-            {
-              "name": "door_4"
-            },
-            {
-              "name": "door_2_side"
-            }
-          ]
+          "objects": []
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "controllerAngle",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "controllerSpeed",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "touchInOut",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "instances": [
         {
           "angle": 0,
           "customSize": true,
-          "height": 1227,
+          "height": 1215,
           "layer": "",
           "locked": false,
           "name": "MAZE_1",
           "persistentUuid": "ed61e00b-868b-4393-a4d5-55ddd74e1029",
-          "width": 1227,
+          "width": 1183,
           "x": 280,
           "y": -504,
           "zOrder": 2,
@@ -409,49 +1608,129 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "PLAYER",
-          "persistentUuid": "bfa3b63f-da7d-4c97-91b5-59ba333886c8",
-          "width": 0,
-          "x": 872,
-          "y": -477,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
+          "angle": 90,
           "customSize": true,
-          "height": 6798,
+          "height": 3316,
           "layer": "",
           "locked": false,
           "name": "NewObject",
           "persistentUuid": "e725e4e4-6265-4d5d-80db-d9342c23d612",
-          "width": 6343,
-          "x": -2312,
-          "y": -3173,
+          "width": 3452,
+          "x": -845,
+          "y": -1501,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "start",
+          "persistentUuid": "18afceef-b63e-4106-bcb3-91efee219ca4",
+          "width": 0,
+          "x": 652,
+          "y": -939,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "finish",
+          "persistentUuid": "2095caac-d8ec-4850-91e6-5819d1110016",
+          "width": 0,
+          "x": 651,
+          "y": 703,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Lighting",
+          "layer": "UI",
           "locked": false,
-          "name": "NewObject3",
-          "persistentUuid": "518bc613-b6c8-4f9b-9b75-beb06c8e3cb2",
+          "name": "controllerBG",
+          "persistentUuid": "b500e0ad-84b1-427c-a094-3ad1f068e2bb",
           "width": 0,
-          "x": 885,
-          "y": 995,
-          "zOrder": 26,
+          "x": 24,
+          "y": 640,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "controllerJoystick",
+          "persistentUuid": "bcf402be-7155-448c-91c2-6e2e65b4143c",
+          "width": 0,
+          "x": 76,
+          "y": 697,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "speed",
+          "persistentUuid": "2befb05d-ee8f-4bfd-916f-42c9655aee0e",
+          "width": 0,
+          "x": 14,
+          "y": 14,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "angle",
+          "persistentUuid": "cf223d5c-dace-4fc3-81b7-5502310f7221",
+          "width": 0,
+          "x": 17,
+          "y": 55,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "controllerCenter",
+          "persistentUuid": "60e4522f-531b-48ff-abe6-83af24c22f51",
+          "width": 0,
+          "x": 108,
+          "y": 722,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -467,22 +1746,78 @@
           "effects": [],
           "behaviors": [
             {
-              "acceleration": 1000,
               "allowDiagonals": true,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 250,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 1000,
               "angleOffset": 0,
               "angularMaxSpeed": 0,
               "customIsometryAngle": 30,
-              "deceleration": 10000,
-              "ignoreDefaultControls": false,
-              "maxSpeed": 200,
-              "movementAngleOffset": -45,
-              "name": "TopDownMovement",
-              "rotateObject": true,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "TopDown"
             }
           ],
           "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\Rectangle 72.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 106,
+                        "y": 107
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 108.19741821289062,
+                            "y": 63.580631256103516
+                          },
+                          {
+                            "x": 143.78135681152344,
+                            "y": 89.31055450439453
+                          },
+                          {
+                            "x": 140.49668884277344,
+                            "y": 133.65362548828125
+                          },
+                          {
+                            "x": 101.6280746459961,
+                            "y": 150.62442016601562
+                          },
+                          {
+                            "x": 61.11712646484375,
+                            "y": 127.08428192138672
+                          },
+                          {
+                            "x": 66.59158325195312,
+                            "y": 81.64632415771484
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "",
               "useMultipleDirections": false,
@@ -515,7 +1850,7 @@
           ]
         },
         {
-          "name": "door_1",
+          "name": "finish",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -651,7 +1986,7 @@
           ]
         },
         {
-          "name": "door_2",
+          "name": "start",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -674,7 +2009,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "sprites\\walls\\door-2.png",
+                      "image": "sprites\\walls\\door-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -699,29 +2034,11 @@
                           },
                           {
                             "x": 440,
-                            "y": 39.5
+                            "y": 40.5
                           },
                           {
                             "x": 0,
-                            "y": 39.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 400.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 399.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 0,
-                            "y": 440
+                            "y": 41.5
                           }
                         ],
                         [
@@ -734,25 +2051,7 @@
                             "y": 0
                           },
                           {
-                            "x": 40.33333206176758,
-                            "y": 119.66666412353516
-                          },
-                          {
-                            "x": 0,
-                            "y": 119
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 320
-                          },
-                          {
                             "x": 40,
-                            "y": 319.5833435058594
-                          },
-                          {
-                            "x": 39.61538314819336,
                             "y": 440
                           },
                           {
@@ -762,456 +2061,12 @@
                         ],
                         [
                           {
-                            "x": 400,
-                            "y": 320.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 320
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 399.5,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 399.1666564941406,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 119
-                          },
-                          {
-                            "x": 400,
-                            "y": 118.75
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "door_3",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "sprites\\walls\\door-3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
                             "x": 0,
-                            "y": 399.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 400.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 0,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 401,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 120.5
-                          },
-                          {
-                            "x": 402,
-                            "y": 117.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 41,
-                            "y": 0
-                          },
-                          {
-                            "x": 40,
-                            "y": 118.5
-                          },
-                          {
-                            "x": 0,
-                            "y": 119.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 120,
-                            "y": 0
-                          },
-                          {
-                            "x": 120,
-                            "y": 38.21428680419922
-                          },
-                          {
-                            "x": 0,
-                            "y": 38.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 320.3571472167969
-                          },
-                          {
-                            "x": 40,
-                            "y": 319.6428527832031
-                          },
-                          {
-                            "x": 40.71428680419922,
-                            "y": 440
-                          },
-                          {
-                            "x": 0,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 320,
-                            "y": 0.3571428656578064
-                          },
-                          {
-                            "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 38.92856979370117
-                          },
-                          {
-                            "x": 319.28570556640625,
-                            "y": 39.64285659790039
-                          }
-                        ],
-                        [
-                          {
-                            "x": 399.28570556640625,
-                            "y": 320.3571472167969
-                          },
-                          {
-                            "x": 440,
-                            "y": 320.3571472167969
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 400,
-                            "y": 440
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "door_4",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "sprites\\walls\\door-4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 320,
-                            "y": 400.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 400.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 319,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 401,
-                            "y": 319.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 321.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 440
-                          },
-                          {
-                            "x": 399,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 399.5
-                          },
-                          {
-                            "x": 120,
                             "y": 401.5
                           },
                           {
-                            "x": 120,
-                            "y": 440
-                          },
-                          {
-                            "x": 0,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 319.5
-                          },
-                          {
-                            "x": 40,
-                            "y": 320.5
-                          },
-                          {
-                            "x": 39,
-                            "y": 440
-                          },
-                          {
-                            "x": 0,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 40,
-                            "y": 0
-                          },
-                          {
-                            "x": 39.28571319580078,
-                            "y": 120.35713958740234
-                          },
-                          {
-                            "x": 0,
-                            "y": 120.35713958740234
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 120,
-                            "y": 0
-                          },
-                          {
-                            "x": 120.71428680419922,
-                            "y": 39.64285659790039
-                          },
-                          {
-                            "x": 0,
-                            "y": 39.64285659790039
-                          }
-                        ],
-                        [
-                          {
-                            "x": 320,
-                            "y": 0.3571428656578064
-                          },
-                          {
                             "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 38.92856979370117
-                          },
-                          {
-                            "x": 320.71429443359375,
-                            "y": 39.64285659790039
-                          }
-                        ],
-                        [
-                          {
-                            "x": 400,
-                            "y": 0.3571428656578064
-                          },
-                          {
-                            "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 119.64286041259766
-                          },
-                          {
-                            "x": 399.28570556640625,
-                            "y": 118.92857360839844
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "door_2_side",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "sprites\\walls\\door-2-side.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 400.5
-                          },
-                          {
-                            "x": 440,
-                            "y": 399.5
+                            "y": 401.5
                           },
                           {
                             "x": 440,
@@ -1224,7 +2079,7 @@
                         ],
                         [
                           {
-                            "x": 402,
+                            "x": 401,
                             "y": 0
                           },
                           {
@@ -1233,306 +2088,32 @@
                           },
                           {
                             "x": 440,
-                            "y": 440
+                            "y": 119.5
                           },
                           {
                             "x": 400,
-                            "y": 440
-                          }
-                        ],
-                        [
-                          {
-                            "x": 320,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 0
-                          },
-                          {
-                            "x": 440,
-                            "y": 39.5
-                          },
-                          {
-                            "x": 319,
-                            "y": 38.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 120,
-                            "y": 0
-                          },
-                          {
-                            "x": 120,
-                            "y": 37.5
-                          },
-                          {
-                            "x": 0,
-                            "y": 40.5
-                          }
-                        ],
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 39,
-                            "y": 0
-                          },
-                          {
-                            "x": 40,
-                            "y": 120.5
-                          },
-                          {
-                            "x": 0,
                             "y": 119.5
                           }
                         ],
                         [
                           {
-                            "x": 0,
-                            "y": 320.5
-                          },
-                          {
-                            "x": 41,
+                            "x": 401,
                             "y": 321.5
                           },
                           {
-                            "x": 39,
+                            "x": 440,
+                            "y": 321.5
+                          },
+                          {
+                            "x": 440,
                             "y": 440
                           },
                           {
-                            "x": 0,
+                            "x": 400,
                             "y": 440
                           }
                         ]
                       ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "colision_big_horizontal",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\walls\\colision_big_horizontal.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "colision_big_vertical",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\walls\\colision_big_vertical.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "colision_small_horizontal",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\walls\\colision_small_horizontal.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "floor",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\floor.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "colision_small_vertical",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\walls\\colision_small_vertical.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -1882,21 +2463,7 @@
           ]
         },
         {
-          "name": "NewObject2",
-          "tags": "",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 200,
-            "color": "172;255;177",
-            "debugMode": false,
-            "texture": ""
-          }
-        },
-        {
-          "name": "NewObject3",
+          "name": "finishLight",
           "tags": "",
           "type": "Lighting::LightObject",
           "variables": [],
@@ -1904,10 +2471,229 @@
           "behaviors": [],
           "content": {
             "radius": 500,
-            "color": "130;255;128",
+            "color": "5;255;0",
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "name": "startLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "225;255;0",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "controllerBG",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\controller\\controllerBody.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 75,
+                        "y": 75
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "controllerJoystick",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\controller\\controllerJoystick.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 20,
+                        "y": 20
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mouseDistanceCheck",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\controller\\mouseDistanceCheck.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "speed",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "speed",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "angle",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "angle",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "controllerCenter",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\controller\\controllerCenter.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1948,6 +2734,62 @@
                     "MAZE_1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PLAYER",
+                    "start.BoundingBoxCenterX()",
+                    "start.BoundingBoxCenterY()",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "startLight",
+                    "start.BoundingBoxCenterX()",
+                    "start.BoundingBoxCenterY()",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "finishLight",
+                    "finish.BoundingBoxCenterX()",
+                    "finish.BoundingBoxCenterY()",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "light",
+                    "0",
+                    "0",
+                    "\"Lighting\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1975,11 +2817,15 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CentreCamera"
+                    "value": "FixCamera"
                   },
                   "parameters": [
                     "",
                     "PLAYER",
+                    "MAZE_1.BoundingBoxLeft() - 50",
+                    "start.BoundingBoxTop() - 50",
+                    "MAZE_1.BoundingBoxRight() + 50",
+                    "finish.BoundingBoxBottom() + 50",
                     "",
                     "",
                     ""
@@ -1993,7 +2839,7 @@
                   },
                   "parameters": [
                     "",
-                    "0.3",
+                    "0.5",
                     "",
                     ""
                   ],
@@ -2011,7 +2857,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2024,46 +2870,396 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MouseButtonPressed"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "",
-                    "Left"
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "controllerBG",
+                    "=",
+                    "SceneWindowWidth() - controllerBG.Width() / 2 - 20",
+                    "=",
+                    "SceneWindowHeight() - controllerBG.Height() / 2 - 20"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "controllerCenter",
+                    "=",
+                    "controllerBG.BoundingBoxCenterX()",
+                    "=",
+                    "controllerBG.BoundingBoxCenterY()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "=",
+                    "controllerCenter.BoundingBoxCenterX()",
+                    "=",
+                    "controllerCenter.BoundingBoxCenterY()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "controllerBG",
+                    "=",
+                    "50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "=",
+                    "50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "mouseDistanceCheck",
+                    "MouseX()",
+                    "MouseY()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DraggableBehavior::Dragged"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "Draggable"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "=",
+                    "controllerBG.BoundingBoxCenterX()",
+                    "=",
+                    "controllerBG.BoundingBoxCenterY()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "<",
+                    "controllerBG.X() - 15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    ">",
+                    "controllerBG.X() + 15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "<",
+                    "controllerBG.Y() - 15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    ">",
+                    "controllerBG.Y() + 15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "rotation",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MouseY"
-                      },
-                      "parameters": [
-                        "",
-                        "<",
-                        "PLAYER.Y() - 15",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PlatformBehavior::SimulateUpKey"
+                        "value": "MettreXY"
                       },
                       "parameters": [
-                        "PLAYER",
-                        "TopDownMovement"
+                        "angle",
+                        "=",
+                        "20",
+                        "=",
+                        "20"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeLayer"
+                      },
+                      "parameters": [
+                        "angle",
+                        "\"UI\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "angle",
+                        "=",
+                        "\"Угол: \" + VariableString(controllerAngle)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RotateTowardPosition"
+                      },
+                      "parameters": [
+                        "controllerCenter",
+                        "MouseX() - CameraX()",
+                        "MouseY() - CameraY()",
+                        "0",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "controllerAngle",
+                        "=",
+                        "controllerCenter.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "mouseDistanceCheck",
+                        "=",
+                        "MouseX()",
+                        "=",
+                        "MouseY()"
                       ],
                       "subInstructions": []
                     }
@@ -2078,104 +3274,57 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MouseY"
+                        "value": "DraggableBehavior::Dragged"
                       },
                       "parameters": [
-                        "",
-                        ">",
-                        "PLAYER.Y() + 15",
-                        "",
-                        ""
+                        "controllerJoystick",
+                        "Draggable"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateDownKey"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "TopDownMovement"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Distance"
+                          },
+                          "parameters": [
+                            "controllerJoystick",
+                            "controllerCenter",
+                            "75",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MouseX"
-                      },
-                      "parameters": [
-                        "",
-                        "<",
-                        "PLAYER.X() - 15",
-                        "",
-                        ""
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "controllerJoystick",
+                            "controllerBG",
+                            "75",
+                            "controllerCenter.Angle()"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "events": []
                     }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MouseX"
-                      },
-                      "parameters": [
-                        "",
-                        ">",
-                        "PLAYER.X() + 15",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -2208,6 +3357,30 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "start",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "finish",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2221,7 +3394,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "light",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2242,22 +3415,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "light",
-                    "0",
-                    "0",
-                    "\"Lighting\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             },
             {
@@ -2317,6 +3475,17 @@
           "followBaseLayerCamera": true,
           "isLightingLayer": true,
           "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 41,
+          "ambientLightColorG": 6029040,
+          "ambientLightColorR": 8284064,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
           "visibility": true,
           "cameras": [],
           "effects": []
