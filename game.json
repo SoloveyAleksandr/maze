@@ -547,6 +547,24 @@
         "name": "sprites\\labirints\\7 by 7 orthogonal maze.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/labirints/8 by 8 orthogonal maze.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\labirints\\8 by 8 orthogonal maze.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/UI/backBTN.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\UI\\backBTN.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -650,24 +668,8 @@
           "persistentUuid": "3bb43751-7213-4fd6-b968-537bab0c7cf6",
           "width": 0,
           "x": 173,
-          "y": 426,
+          "y": 443,
           "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "floor",
-          "persistentUuid": "7cb08875-5310-4aa1-a6cf-f8f5fed69634",
-          "width": 0,
-          "x": -6,
-          "y": 634,
-          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -735,6 +737,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "floor",
+          "persistentUuid": "4ad76eec-7e0c-481d-bad0-672eec9020b8",
+          "width": 0,
+          "x": 184,
+          "y": 729,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -777,13 +795,13 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "sprites\\Group 25.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 110,
+                        "y": 77
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -791,7 +809,34 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 170.4231719970703,
+                            "y": 0
+                          },
+                          {
+                            "x": 220,
+                            "y": 61
+                          },
+                          {
+                            "x": 220,
+                            "y": 153
+                          },
+                          {
+                            "x": 0,
+                            "y": 153
+                          },
+                          {
+                            "x": 0,
+                            "y": 60.87890625
+                          },
+                          {
+                            "x": 50.42317581176758,
+                            "y": 0
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1292,7 +1337,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1317,12 +1362,14 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeWidth"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "floor",
                     "=",
-                    "SceneWindowWidth()"
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() - floor.Height() / 2"
                   ],
                   "subInstructions": []
                 },
@@ -1332,11 +1379,11 @@
                     "value": "MettreXY"
                   },
                   "parameters": [
-                    "floor",
+                    "wispShadow",
                     "=",
-                    "0",
+                    "SceneWindowWidth() / 2",
                     "=",
-                    "SceneWindowHeight() - floor.Height()"
+                    "floor.BoundingBoxTop() + wispShadow.Height() / 4"
                   ],
                   "subInstructions": []
                 },
@@ -1350,7 +1397,7 @@
                     "=",
                     "SceneWindowWidth() / 2",
                     "=",
-                    "floor.BoundingBoxTop() - 175\n"
+                    "floor.BoundingBoxTop() - 150\n"
                   ],
                   "subInstructions": []
                 },
@@ -1494,18 +1541,6 @@
                     "wisp.BoundingBoxCenterX()",
                     "=",
                     "wisp.BoundingBoxCenterY()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "wispShadow",
-                    "=",
-                    "wisp.BoundingBoxCenterX()"
                   ],
                   "subInstructions": []
                 }
@@ -1664,6 +1699,723 @@
                   "parameters": [
                     "vispMoovIsUp",
                     "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "handle click",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "UI",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "sound\\click1.ogg",
+                    "",
+                    "50",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "playBTN",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 10933336,
+          "ambientLightColorG": 150995054,
+          "ambientLightColorR": 1869182049,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 46,
+          "ambientLightColorG": 46,
+          "ambientLightColorR": 46,
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": -2147483632,
+          "ambientLightColorG": 6029040,
+          "ambientLightColorR": 8091496,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "levelsMenu",
+      "name": "levelsMenu",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5724999679565417,
+        "windowMask": false
+      },
+      "objectsGroups": [
+        {
+          "name": "UI",
+          "objects": [
+            {
+              "name": "playBTN"
+            },
+            {
+              "name": "settingsBTN"
+            },
+            {
+              "name": "backBTN"
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "vispMoovIsUp",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1912,
+          "layer": "",
+          "locked": false,
+          "name": "bg",
+          "persistentUuid": "3838e6a1-36fc-4252-9bc3-ed8445fbbb0d",
+          "width": 1665,
+          "x": -659,
+          "y": -593,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -37,
+          "customSize": true,
+          "height": 185.58450317382812,
+          "layer": "",
+          "locked": false,
+          "name": "BG_Graffiti",
+          "persistentUuid": "068ff462-2181-4d72-bfca-0192ed20f23f",
+          "width": 340.77154541015625,
+          "x": 188.91990661621094,
+          "y": 365.0478820800781,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "backBTN",
+          "persistentUuid": "ad8b08b0-ccc4-42f9-b9dc-90d2e3d295ca",
+          "width": 0,
+          "x": 10,
+          "y": 15,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 520,
+          "name": "bg",
+          "tags": "",
+          "texture": "sprites\\concrete_wall.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 520,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ]
+        },
+        {
+          "name": "floor",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\Group 25.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 110,
+                        "y": 77
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 170.4231719970703,
+                            "y": 0
+                          },
+                          {
+                            "x": 220,
+                            "y": 61
+                          },
+                          {
+                            "x": 220,
+                            "y": 153
+                          },
+                          {
+                            "x": 0,
+                            "y": 153
+                          },
+                          {
+                            "x": 0,
+                            "y": 60.87890625
+                          },
+                          {
+                            "x": 50.42317581176758,
+                            "y": 0
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "playBTN",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\playBTN.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "settingsBTN",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\settingsBTN.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "btnLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 200,
+            "color": "160;160;160",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "BG_Graffiti",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "LR_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 138,
+                        "y": 117
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\LR_5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 217,
+                        "y": 138
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\LR_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 213,
+                        "y": 116.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "backBTN",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\backBTN.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "floor",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() - floor.Height() / 2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "backBTN",
+                    "=",
+                    "10",
+                    "=",
+                    "10\n\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "BG_Graffiti",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() / 2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "BG_Graffiti",
+                    "=",
+                    "155"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "1",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "1",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "btnLight",
+                    "backBTN.BoundingBoxCenterX()",
+                    "backBTN.BoundingBoxCenterY()",
+                    "\"Lighting\""
                   ],
                   "subInstructions": []
                 }
@@ -3809,6 +4561,742 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "sprites\\labirints\\8 by 8 orthogonal maze.png",
+                      "points": [
+                        {
+                          "name": "start",
+                          "x": 57,
+                          "y": 0
+                        },
+                        {
+                          "name": "finish",
+                          "x": 74,
+                          "y": 130
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1.7910752296447754,
+                            "y": 0
+                          },
+                          {
+                            "x": 1.7910752296447754,
+                            "y": 129.02906799316406
+                          },
+                          {
+                            "x": 0,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 128.2102813720703,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 130
+                          },
+                          {
+                            "x": 128.2102813720703,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 64.34565734863281,
+                            "y": 0
+                          },
+                          {
+                            "x": 65.65570068359375,
+                            "y": 0
+                          },
+                          {
+                            "x": 65.98321533203125,
+                            "y": 17.347843170166016
+                          },
+                          {
+                            "x": 64.34565734863281,
+                            "y": 17.02033233642578
+                          }
+                        ],
+                        [
+                          {
+                            "x": 64.73939514160156,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 2.1089630126953125
+                          },
+                          {
+                            "x": 64.73939514160156,
+                            "y": 1.8453426361083984
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 50.24027633666992,
+                            "y": 0
+                          },
+                          {
+                            "x": 49.97665786743164,
+                            "y": 2.1089630126953125
+                          },
+                          {
+                            "x": 0,
+                            "y": 2.1089630126953125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 15.817222595214844
+                          },
+                          {
+                            "x": 49.713035583496094,
+                            "y": 16.080842971801758
+                          },
+                          {
+                            "x": 49.713035583496094,
+                            "y": 18.18980598449707
+                          },
+                          {
+                            "x": 0,
+                            "y": 18.18980598449707
+                          }
+                        ],
+                        [
+                          {
+                            "x": 47.86769485473633,
+                            "y": 16.608083724975586
+                          },
+                          {
+                            "x": 49.713035583496094,
+                            "y": 16.608083724975586
+                          },
+                          {
+                            "x": 49.97665786743164,
+                            "y": 49.82425308227539
+                          },
+                          {
+                            "x": 47.86769485473633,
+                            "y": 49.560630798339844
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.922176361083984,
+                            "y": 31.8980655670166
+                          },
+                          {
+                            "x": 114.03640747070312,
+                            "y": 31.8980655670166
+                          },
+                          {
+                            "x": 114.3000259399414,
+                            "y": 34.00703048706055
+                          },
+                          {
+                            "x": 49.185794830322266,
+                            "y": 33.743408203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80.02938079833984,
+                            "y": 15.817222595214844
+                          },
+                          {
+                            "x": 82.13834381103516,
+                            "y": 15.55360221862793
+                          },
+                          {
+                            "x": 82.13834381103516,
+                            "y": 48.769771575927734
+                          },
+                          {
+                            "x": 80.02938079833984,
+                            "y": 50.08787155151367
+                          }
+                        ],
+                        [
+                          {
+                            "x": 95.84660339355469,
+                            "y": 16.080842971801758
+                          },
+                          {
+                            "x": 129.32638549804688,
+                            "y": 15.55360221862793
+                          },
+                          {
+                            "x": 129.06277465820312,
+                            "y": 18.18980598449707
+                          },
+                          {
+                            "x": 95.5829849243164,
+                            "y": 17.926185607910156
+                          }
+                        ],
+                        [
+                          {
+                            "x": 81.87472534179688,
+                            "y": 47.97890853881836
+                          },
+                          {
+                            "x": 97.95556640625,
+                            "y": 47.97890853881836
+                          },
+                          {
+                            "x": 97.69194793701172,
+                            "y": 50.08787155151367
+                          },
+                          {
+                            "x": 80.29299926757812,
+                            "y": 49.82425308227539
+                          }
+                        ],
+                        [
+                          {
+                            "x": 111.92744445800781,
+                            "y": 47.97890853881836
+                          },
+                          {
+                            "x": 129.06277465820312,
+                            "y": 47.97890853881836
+                          },
+                          {
+                            "x": 129.32638549804688,
+                            "y": 49.82425308227539
+                          },
+                          {
+                            "x": 113.24554443359375,
+                            "y": 49.82425308227539
+                          }
+                        ],
+                        [
+                          {
+                            "x": 112.1910629272461,
+                            "y": 47.97890853881836
+                          },
+                          {
+                            "x": 113.77278900146484,
+                            "y": 49.033390045166016
+                          },
+                          {
+                            "x": 113.77278900146484,
+                            "y": 65.37785339355469
+                          },
+                          {
+                            "x": 111.92744445800781,
+                            "y": 64.85061645507812
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.706007957458496,
+                            "y": 31.634445190429688
+                          },
+                          {
+                            "x": 33.63219451904297,
+                            "y": 31.8980655670166
+                          },
+                          {
+                            "x": 33.10495376586914,
+                            "y": 34.00703048706055
+                          },
+                          {
+                            "x": 15.706007957458496,
+                            "y": 34.00703048706055
+                          }
+                        ],
+                        [
+                          {
+                            "x": 32.314090728759766,
+                            "y": 33.21616744995117
+                          },
+                          {
+                            "x": 34.1594352722168,
+                            "y": 32.161685943603516
+                          },
+                          {
+                            "x": 33.89581298828125,
+                            "y": 64.58699035644531
+                          },
+                          {
+                            "x": 31.786849975585938,
+                            "y": 64.85061645507812
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0.793585479259491,
+                            "y": 48.15789031982422
+                          },
+                          {
+                            "x": 17.898847579956055,
+                            "y": 47.89473342895508
+                          },
+                          {
+                            "x": 17.635690689086914,
+                            "y": 49.999996185302734
+                          },
+                          {
+                            "x": 1.0567433834075928,
+                            "y": 49.47368240356445
+                          }
+                        ],
+                        [
+                          {
+                            "x": 63.95147705078125,
+                            "y": 47.63157653808594
+                          },
+                          {
+                            "x": 66.0567398071289,
+                            "y": 47.63157653808594
+                          },
+                          {
+                            "x": 66.0567398071289,
+                            "y": 112.36841583251953
+                          },
+                          {
+                            "x": 63.95147705078125,
+                            "y": 113.4210433959961
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.793584823608398,
+                            "y": 63.684207916259766
+                          },
+                          {
+                            "x": 50.00410842895508,
+                            "y": 64.21052551269531
+                          },
+                          {
+                            "x": 50.26726531982422,
+                            "y": 66.05262756347656
+                          },
+                          {
+                            "x": 16.846216201782227,
+                            "y": 66.05262756347656
+                          }
+                        ],
+                        [
+                          {
+                            "x": 16.05674171447754,
+                            "y": 64.21052551269531
+                          },
+                          {
+                            "x": 17.635690689086914,
+                            "y": 64.7368392944336
+                          },
+                          {
+                            "x": 17.898847579956055,
+                            "y": 81.57894134521484
+                          },
+                          {
+                            "x": 16.05674171447754,
+                            "y": 80.26315307617188
+                          }
+                        ],
+                        [
+                          {
+                            "x": 1.3199012279510498,
+                            "y": 79.99999237060547
+                          },
+                          {
+                            "x": 17.109373092651367,
+                            "y": 79.99999237060547
+                          },
+                          {
+                            "x": 17.898847579956055,
+                            "y": 81.84210205078125
+                          },
+                          {
+                            "x": 1.0567433834075928,
+                            "y": 81.84210205078125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80.26726531982422,
+                            "y": 63.947364807128906
+                          },
+                          {
+                            "x": 112.89884185791016,
+                            "y": 64.21052551269531
+                          },
+                          {
+                            "x": 113.42515563964844,
+                            "y": 65.78946685791016
+                          },
+                          {
+                            "x": 81.0567398071289,
+                            "y": 66.05262756347656
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80.00410461425781,
+                            "y": 64.21052551269531
+                          },
+                          {
+                            "x": 81.8462142944336,
+                            "y": 64.21052551269531
+                          },
+                          {
+                            "x": 82.10936737060547,
+                            "y": 82.10525512695312
+                          },
+                          {
+                            "x": 79.74095153808594,
+                            "y": 81.57894134521484
+                          }
+                        ],
+                        [
+                          {
+                            "x": 96.0567398071289,
+                            "y": 65.26315307617188
+                          },
+                          {
+                            "x": 98.16200256347656,
+                            "y": 65.26315307617188
+                          },
+                          {
+                            "x": 98.16200256347656,
+                            "y": 113.15789031982422
+                          },
+                          {
+                            "x": 96.31989288330078,
+                            "y": 113.15789031982422
+                          }
+                        ],
+                        [
+                          {
+                            "x": 111.84620666503906,
+                            "y": 79.7368392944336
+                          },
+                          {
+                            "x": 130,
+                            "y": 79.99999237060547
+                          },
+                          {
+                            "x": 130,
+                            "y": 82.10525512695312
+                          },
+                          {
+                            "x": 112.89884185791016,
+                            "y": 81.84210205078125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 112.10936737060547,
+                            "y": 79.99999237060547
+                          },
+                          {
+                            "x": 113.68831634521484,
+                            "y": 81.31578826904297
+                          },
+                          {
+                            "x": 114.21463012695312,
+                            "y": 98.15789031982422
+                          },
+                          {
+                            "x": 112.10936737060547,
+                            "y": 97.89472961425781
+                          }
+                        ],
+                        [
+                          {
+                            "x": 79.74095153808594,
+                            "y": 95.52631378173828
+                          },
+                          {
+                            "x": 96.58305358886719,
+                            "y": 95.52631378173828
+                          },
+                          {
+                            "x": 96.8462142944336,
+                            "y": 98.15789031982422
+                          },
+                          {
+                            "x": 79.74095153808594,
+                            "y": 98.15789031982422
+                          }
+                        ],
+                        [
+                          {
+                            "x": 97.63568115234375,
+                            "y": 111.57894134521484
+                          },
+                          {
+                            "x": 114.21463012695312,
+                            "y": 111.84210205078125
+                          },
+                          {
+                            "x": 114.21463012695312,
+                            "y": 113.9473648071289
+                          },
+                          {
+                            "x": 97.10936737060547,
+                            "y": 113.6842041015625
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80.00410461425781,
+                            "y": 127.6315689086914
+                          },
+                          {
+                            "x": 130,
+                            "y": 127.89472961425781
+                          },
+                          {
+                            "x": 130,
+                            "y": 130
+                          },
+                          {
+                            "x": 80.26726531982422,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 65.00410461425781,
+                            "y": 111.84210205078125
+                          },
+                          {
+                            "x": 81.8462142944336,
+                            "y": 112.10525512695312
+                          },
+                          {
+                            "x": 81.58305358886719,
+                            "y": 113.9473648071289
+                          },
+                          {
+                            "x": 64.21463775634766,
+                            "y": 113.6842041015625
+                          }
+                        ],
+                        [
+                          {
+                            "x": 80.00410461425781,
+                            "y": 113.4210433959961
+                          },
+                          {
+                            "x": 82.10936737060547,
+                            "y": 112.36841583251953
+                          },
+                          {
+                            "x": 82.10936737060547,
+                            "y": 130
+                          },
+                          {
+                            "x": 80.00410461425781,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0.5304275751113892,
+                            "y": 127.89472961425781
+                          },
+                          {
+                            "x": 65.53042602539062,
+                            "y": 127.89472961425781
+                          },
+                          {
+                            "x": 65.53042602539062,
+                            "y": 130
+                          },
+                          {
+                            "x": 0,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.793584823608398,
+                            "y": 111.57894134521484
+                          },
+                          {
+                            "x": 17.898847579956055,
+                            "y": 111.31578063964844
+                          },
+                          {
+                            "x": 17.898847579956055,
+                            "y": 130
+                          },
+                          {
+                            "x": 15.530426979064941,
+                            "y": 130
+                          }
+                        ],
+                        [
+                          {
+                            "x": 31.846214294433594,
+                            "y": 79.7368392944336
+                          },
+                          {
+                            "x": 49.74095153808594,
+                            "y": 79.7368392944336
+                          },
+                          {
+                            "x": 49.74095153808594,
+                            "y": 82.10525512695312
+                          },
+                          {
+                            "x": 33.42516326904297,
+                            "y": 81.84210205078125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 31.846214294433594,
+                            "y": 79.99999237060547
+                          },
+                          {
+                            "x": 33.95147705078125,
+                            "y": 81.05262756347656
+                          },
+                          {
+                            "x": 33.95147705078125,
+                            "y": 112.10525512695312
+                          },
+                          {
+                            "x": 31.846214294433594,
+                            "y": 113.6842041015625
+                          }
+                        ],
+                        [
+                          {
+                            "x": 47.63568878173828,
+                            "y": 95.52631378173828
+                          },
+                          {
+                            "x": 64.74095153808594,
+                            "y": 95.78946685791016
+                          },
+                          {
+                            "x": 64.74095153808594,
+                            "y": 98.4210433959961
+                          },
+                          {
+                            "x": 47.63568878173828,
+                            "y": 98.4210433959961
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.530426979064941,
+                            "y": 96.05262756347656
+                          },
+                          {
+                            "x": 32.63568878173828,
+                            "y": 95.78946685791016
+                          },
+                          {
+                            "x": 32.63568878173828,
+                            "y": 98.15789031982422
+                          },
+                          {
+                            "x": 15.793584823608398,
+                            "y": 98.15789031982422
+                          }
+                        ],
+                        [
+                          {
+                            "x": 33.16200637817383,
+                            "y": 112.10525512695312
+                          },
+                          {
+                            "x": 50.00410842895508,
+                            "y": 111.84210205078125
+                          },
+                          {
+                            "x": 48.95147705078125,
+                            "y": 113.6842041015625
+                          },
+                          {
+                            "x": 32.37253189086914,
+                            "y": 113.9473648071289
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.16200256347656,
+                            "y": 113.15789031982422
+                          },
+                          {
+                            "x": 49.74095153808594,
+                            "y": 112.36841583251953
+                          },
+                          {
+                            "x": 49.74095153808594,
+                            "y": 128.1578826904297
+                          },
+                          {
+                            "x": 47.63568878173828,
+                            "y": 128.42105102539062
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": []
+                }
+              ]
             }
           ]
         },
@@ -5233,7 +6721,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "FINISH",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5369,9 +6857,9 @@
           "effects": []
         },
         {
-          "ambientLightColorB": 37,
-          "ambientLightColorG": 37,
-          "ambientLightColorR": 37,
+          "ambientLightColorB": 0,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
           "followBaseLayerCamera": true,
           "isLightingLayer": true,
           "name": "Lighting",
