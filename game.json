@@ -765,210 +765,9 @@
       "value": 0
     },
     {
-      "name": "levelsList",
-      "type": "array",
-      "children": [
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "isOpen",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "name": "isPassed",
-              "type": "number",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "name": "isOpen",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "isPassed",
-              "type": "number",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "number",
-              "value": 2
-            },
-            {
-              "name": "isOpen",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "isPassed",
-              "type": "number",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "number",
-              "value": 3
-            },
-            {
-              "name": "isOpen",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "isPassed",
-              "type": "number",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "4"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "5"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "6"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "7"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "8"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "type": "structure",
-          "children": [
-            {
-              "name": "id",
-              "type": "string",
-              "value": "9"
-            },
-            {
-              "name": "isOpen",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "isPassed",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        }
-      ]
+      "name": "lastLVL",
+      "type": "number",
+      "value": 5
     }
   ],
   "layouts": [
@@ -2280,7 +2079,7 @@
         "gridColor": 5131854,
         "gridAlpha": 0.39,
         "snap": true,
-        "zoomFactor": 0.9351666431426985,
+        "zoomFactor": 1.0411666371345505,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2310,6 +2109,267 @@
         },
         {
           "name": "idCounter",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "levelsList",
+          "type": "array",
+          "children": [
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "isOpen",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "isPassed",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "isOpen",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "isPassed",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "number",
+                  "value": 2
+                },
+                {
+                  "name": "isOpen",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "isPassed",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "number",
+                  "value": 3
+                },
+                {
+                  "name": "isOpen",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "isPassed",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "4"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "5"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "6"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "7"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "8"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "9"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "10"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "11"
+                },
+                {
+                  "name": "isOpen",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "isPassed",
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "btnCol",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "btnRow",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "btnColStep",
           "type": "number",
           "value": 0
         }
@@ -2487,6 +2547,22 @@
           "x": 272,
           "y": 184,
           "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "lastID",
+          "persistentUuid": "ec7d1ddf-85e7-452e-b0e0-fdef565923cc",
+          "width": 0,
+          "x": 160,
+          "y": 16,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2856,8 +2932,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 36,
+                        "y": 29
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2885,8 +2961,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 36,
+                        "y": 29
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2914,8 +2990,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 36,
+                        "y": 29
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2932,9 +3008,37 @@
           ]
         },
         {
+          "name": "openLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 70,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "passedLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 70,
+            "color": "39;255;0",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
           "bold": false,
           "italic": false,
-          "name": "textID",
+          "name": "lastID",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -2946,9 +3050,9 @@
           "font": "",
           "characterSize": 20,
           "color": {
-            "b": 212,
-            "g": 212,
-            "r": 212
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         }
       ],
@@ -3098,6 +3202,129 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
+          "folded": true,
+          "name": "SAVE & LOAD",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "levelsList",
+                  "valueIteratorVariableName": "level",
+                  "keyIteratorVariableName": "",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "GroupExists"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(Variable(level.id)) + \"_isOpen\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(Variable(level.id)) + \"_isOpen\"",
+                            "",
+                            "levelsList[Variable(level.id)].isOpen"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "GroupExists"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(Variable(level.id)) + \"_isPassed\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(Variable(level.id)) + \"_isPassed\"",
+                            "",
+                            "levelsList[Variable(level.id)].isPassed"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
           "folded": false,
           "name": "lvl btn",
           "source": "",
@@ -3130,9 +3357,36 @@
                     "\"UI\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "btnColStep",
+                    "=",
+                    "SceneWindowWidth() / 5"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "добавление id колонок и рядов для кнопок",
+                  "comment2": ""
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -3181,133 +3435,119 @@
                             "1"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "LVL_BTN",
+                            "col",
+                            "=",
+                            "Variable(btnCol)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "btnCol",
+                            "+",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "LVL_BTN",
+                            "row",
+                            "=",
+                            "Variable(btnRow)"
+                          ],
+                          "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "btnCol",
+                                ">",
+                                "4"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "btnCol",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "btnRow",
+                                "+",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "1",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "LVL_BTN",
-                    "id",
-                    "=",
-                    "GlobalVariable(levelsList[LVL_BTN.Variable(id) - 1].id)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "LVL_BTN",
-                    "isOpen",
-                    "=",
-                    "GlobalVariable(levelsList[LVL_BTN.Variable(id) - 1].isOpen)"
-                  ],
-                  "subInstructions": []
                 },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "LVL_BTN",
-                    "isPassed",
-                    "=",
-                    "GlobalVariable(levelsList[LVL_BTN.Variable(id) - 1].isPassed)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "LVL_BTN",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "LVL_BTN",
-                    "isOpen",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Repeat",
-                  "repeatExpression": "1",
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": " добовление состояния для кнопок",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "LVL_BTN",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "lvlNum",
-                        "LVL_BTN.BoundingBoxCenterX()",
-                        "LVL_BTN.BoundingBoxCenterY()",
-                        "\"UI\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "lvlNum",
-                        "=",
-                        "ToString(LVL_BTN.Variable(id) + 1)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "lvlNum",
-                        "=",
-                        "LVL_BTN.BoundingBoxCenterX()",
-                        "=",
-                        "LVL_BTN.BoundingBoxCenterY()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
@@ -3321,10 +3561,18 @@
                           },
                           "parameters": [
                             "LVL_BTN",
-                            "isPassed",
+                            "id",
                             "=",
-                            "1"
+                            "Variable(levelsList[LVL_BTN.Variable(id)].id)"
                           ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
                           "subInstructions": []
                         }
                       ],
@@ -3332,69 +3580,26 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::ChangeColor"
+                            "value": "ModVarObjet"
                           },
                           "parameters": [
-                            "lvlNum",
-                            "\"120;255;117\""
+                            "LVL_BTN",
+                            "isOpen",
+                            "=",
+                            "Variable(levelsList[LVL_BTN.Variable(id)].isOpen)"
                           ],
                           "subInstructions": []
                         },
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ChangeAnimation"
-                          },
-                          "parameters": [
-                            "LVL_BTN",
-                            "=",
-                            "2"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjet"
+                            "value": "ModVarObjet"
                           },
                           "parameters": [
                             "LVL_BTN",
                             "isPassed",
                             "=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "TextObject::ChangeColor"
-                          },
-                          "parameters": [
-                            "lvlNum",
-                            "\"255;255;255\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeAnimation"
-                          },
-                          "parameters": [
-                            "LVL_BTN",
-                            "=",
-                            "1"
+                            "Variable(levelsList[LVL_BTN.Variable(id)].isPassed)"
                           ],
                           "subInstructions": []
                         }
@@ -3402,12 +3607,400 @@
                       "events": []
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "вид кнопок",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "LVL_BTN",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Позиционирование кнопок",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenterX"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "=",
+                        "LVL_BTN.Variable(col) * Variable(btnColStep)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "row",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenterY"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "=",
+                        "120"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "row",
+                        ">",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenterY"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "=",
+                        "LVL_BTN.Variable(row) * 30 + 120"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "дизайн",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "isOpen",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Repeat",
+                      "repeatExpression": "1",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "lvlNum",
+                            "LVL_BTN.BoundingBoxCenterX()",
+                            "LVL_BTN.BoundingBoxCenterY()",
+                            "\"UI\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "lvlNum",
+                            "=",
+                            "ToString(LVL_BTN.Variable(id) + 1)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "lvlNum",
+                            "=",
+                            "LVL_BTN.BoundingBoxCenterX()",
+                            "=",
+                            "LVL_BTN.BoundingBoxCenterY()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "LVL_BTN",
+                                "isPassed",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TextObject::ChangeColor"
+                              },
+                              "parameters": [
+                                "lvlNum",
+                                "\"120;255;117\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeAnimation"
+                              },
+                              "parameters": [
+                                "LVL_BTN",
+                                "=",
+                                "2"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "passedLight",
+                                "LVL_BTN.BoundingBoxCenterX()",
+                                "LVL_BTN.BoundingBoxCenterY()",
+                                "\"Lighting\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "LVL_BTN",
+                                "isPassed",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TextObject::ChangeColor"
+                              },
+                              "parameters": [
+                                "lvlNum",
+                                "\"255;255;255\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeAnimation"
+                              },
+                              "parameters": [
+                                "LVL_BTN",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "openLight",
+                                "LVL_BTN.BoundingBoxCenterX()",
+                                "LVL_BTN.BoundingBoxCenterY()",
+                                "\"Lighting\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "клик по кнопке",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
                     {
                       "type": {
                         "inverted": false,
@@ -3424,41 +4017,53 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarGlobal"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "MAZE_NUMBER",
-                        "=",
-                        "LVL_BTN.Variable(id)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"game\"",
-                        "yes"
+                        "LVL_BTN",
+                        "isOpen",
+                        "True"
                       ],
                       "subInstructions": []
                     }
-                  ],
-                  "events": []
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "MAZE_NUMBER",
+                    "=",
+                    "LVL_BTN.Variable(id)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -3469,7 +4074,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "handle click",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3662,7 +4267,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5030002098083485,
+        "zoomFactor": 0.5570002071380603,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3689,6 +4294,12 @@
             },
             {
               "name": "helpBtn"
+            },
+            {
+              "name": "yesBtn"
+            },
+            {
+              "name": "cancelBtn"
             }
           ]
         },
@@ -4041,8 +4652,8 @@
           "name": "timerWrapper",
           "persistentUuid": "e505b3e8-dcce-4923-9529-6df9cde2249c",
           "width": 0,
-          "x": 102,
-          "y": 178,
+          "x": 106,
+          "y": 260,
           "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
@@ -4137,7 +4748,7 @@
           "name": "levelNumber",
           "persistentUuid": "568ada62-7556-49fb-99be-51cb92160d4b",
           "width": 0,
-          "x": 124,
+          "x": 148,
           "y": 227,
           "zOrder": 32,
           "numberProperties": [],
@@ -4169,9 +4780,9 @@
           "name": "blackMask",
           "persistentUuid": "735af5f6-d2a1-440b-adfd-39f50db2980f",
           "width": 0,
-          "x": -7,
-          "y": -19,
-          "zOrder": 20,
+          "x": -13,
+          "y": -11,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4180,7 +4791,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "homeConfirm",
           "locked": false,
           "name": "confirmingQuestion",
           "persistentUuid": "b61efba4-393e-45e1-b54c-841f5f92e829",
@@ -4196,7 +4807,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "homeConfirm",
           "locked": false,
           "name": "yesBtn",
           "persistentUuid": "4865f08b-8bb8-4cf3-aa03-046a094163ba",
@@ -4212,7 +4823,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "homeConfirm",
           "locked": false,
           "name": "cancelBtn",
           "persistentUuid": "4bde650e-e29d-47b0-98b9-34fd38c4293f",
@@ -4220,6 +4831,38 @@
           "x": 225,
           "y": 374,
           "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "homeConfirm",
+          "locked": false,
+          "name": "answerYes",
+          "persistentUuid": "38583e06-46b5-4b46-8e7f-06c4fdf2b0e0",
+          "width": 0,
+          "x": 49,
+          "y": 357,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "homeConfirm",
+          "locked": false,
+          "name": "answerNo",
+          "persistentUuid": "40d4354c-2630-489a-b027-7f0cf42cc3bc",
+          "width": 0,
+          "x": 215,
+          "y": 358,
+          "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8556,86 +9199,6 @@
           ]
         },
         {
-          "name": "triangularMaze",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\labirints\\Triangular delta maze with 20 cells side.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "circularMaze",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\labirints\\15 cells diameter theta maze.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "blackMask",
           "tags": "",
           "type": "Sprite",
@@ -8738,8 +9301,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 36,
+                        "y": 29
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8778,8 +9341,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 36,
+                        "y": 29
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8794,6 +9357,46 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "answerNo",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "no",
+          "font": "SquadaOne-Regular.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "answerYes",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "yes",
+          "font": "SquadaOne-Regular.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -10068,7 +10671,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "buttons",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10201,7 +10804,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10454,7 +11057,7 @@
                       "parameters": [
                         "yesBtn",
                         "=",
-                        "100",
+                        "SceneWindowWidth() / 2 - 100",
                         "=",
                         "SceneWindowHeight() / 2 + 50"
                       ],
@@ -10468,9 +11071,95 @@
                       "parameters": [
                         "cancelBtn",
                         "=",
-                        "SceneWindowWidth() - 100",
+                        "SceneWindowWidth() / 2 + 100",
                         "=",
                         "SceneWindowHeight() / 2 + 50"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "answerYes",
+                            "=",
+                            "yesBtn.BoundingBoxCenterX()",
+                            "=",
+                            "yesBtn.BoundingBoxCenterY()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "answerNo",
+                            "=",
+                            "cancelBtn.BoundingBoxCenterX()",
+                            "=",
+                            "cancelBtn.BoundingBoxCenterY()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "удаляем nextBtn если уровень последний",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "MAZE_NUMBER",
+                        "=",
+                        "GlobalVariable(lastLVL)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "nextBtn",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -11040,7 +11729,7 @@
                         "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "UI",
+                        "playBtn",
                         "disabled",
                         ""
                       ],
@@ -11141,7 +11830,7 @@
                         "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "UI",
+                        "homeBtn",
                         "disabled",
                         ""
                       ],
@@ -11419,6 +12108,64 @@
                 }
               ],
               "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "FINISH",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "finishCollision",
+                    "finish.CenterX()",
+                    "finish.CenterY()",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "finishCollision"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -11436,170 +12183,27 @@
               "comment2": ""
             },
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
               "disabled": false,
-              "folded": true,
-              "name": "FINISH",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "finishCollision",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "finishCollision",
-                        "finish.CenterX()",
-                        "finish.CenterY()",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "finishCollision"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "finishCollision",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "gameFinished",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeLayerTimeScale"
-                          },
-                          "parameters": [
-                            "",
-                            "\"\"",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PauseObjectTimer"
-                          },
-                          "parameters": [
-                            "timer",
-                            "\"gameTimer\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "repeatBtn",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"game\"",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -11612,7 +12216,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "переход на следующий уровень",
+                  "comment": "save",
                   "comment2": ""
                 },
                 {
@@ -11620,19 +12224,6 @@
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "nextBtn",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -11649,8 +12240,8 @@
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
-                        "MAZE_NUMBER",
-                        "+",
+                        "levelsList[GlobalVariable(MAZE_NUMBER)].isPassed",
+                        "=",
                         "1"
                       ],
                       "subInstructions": []
@@ -11658,20 +12249,275 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Scene"
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "levelsList[GlobalVariable(MAZE_NUMBER) + 1].isOpen",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "сохранение текущего уровня",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EcrireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(GlobalVariable(MAZE_NUMBER)) + \"_isOpen\"",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EcrireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(GlobalVariable(MAZE_NUMBER)) + \"_isPassed\"",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "сохранение открытия следующего уровня",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EcrireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"level_\" + ToString(GlobalVariable(MAZE_NUMBER) + 1) + \"_isOpen\"",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "gameFinished",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeLayerTimeScale"
                       },
                       "parameters": [
                         "",
-                        "\"game\"",
-                        "yes"
+                        "\"\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "timer",
+                        "\"gameTimer\""
                       ],
                       "subInstructions": []
                     }
                   ],
                   "events": []
                 }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "повтор уровня",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "repeatBtn",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
               ],
-              "parameters": []
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "переход на следующий уровень",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "nextBtn",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "MAZE_NUMBER",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
