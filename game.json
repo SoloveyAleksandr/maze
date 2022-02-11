@@ -2097,7 +2097,7 @@
         "gridColor": 5131854,
         "gridAlpha": 0.39,
         "snap": true,
-        "zoomFactor": 0.9638332901954637,
+        "zoomFactor": 0.9238332901954636,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3408,6 +3408,26 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "test",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -3556,7 +3576,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "SAVE & LOAD",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3693,40 +3713,7 @@
                             "\"mazeSaves\"",
                             "\"level_\" + ToString(Variable(level.id)) + \"_timerMin\"",
                             "",
-                            "levelsList[Variable(level.id)]timerMin"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "GroupExists"
-                          },
-                          "parameters": [
-                            "\"mazeSaves\"",
-                            "\"level_\" + ToString(Variable(level.id)) + \"_timerMin\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "levelsList[Variable(level.id)]timerMin",
-                            "=",
-                            "0"
+                            "levelsList[Variable(level.id)].timerMin"
                           ],
                           "subInstructions": []
                         }
@@ -3779,6 +3766,39 @@
                           },
                           "parameters": [
                             "\"mazeSaves\"",
+                            "\"level_\" + ToString(Variable(level.id)) + \"_timerMin\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "levelsList[Variable(level.id)].timerMin",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "GroupExists"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
                             "\"level_\" + ToString(Variable(level.id)) + \"_timerSec\""
                           ],
                           "subInstructions": []
@@ -3801,6 +3821,39 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "levelsList",
+                  "valueIteratorVariableName": "levelTimer",
+                  "keyIteratorVariableName": "",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "test",
+                        "+",
+                        "VariableString(levelTimer.timerMin) + \", \" + VariableString(levelTimer.timerSec) + \";\" + NewLine()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ]
             }
@@ -3813,7 +3866,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "lvl btn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4088,6 +4141,32 @@
                             "isPassed",
                             "=",
                             "Variable(levelsList[LVL_BTN.Variable(id)].isPassed)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "LVL_BTN",
+                            "timerMin",
+                            "=",
+                            "Variable(levelsList[LVL_BTN.Variable(id)].timerMin)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "LVL_BTN",
+                            "timerSec",
+                            "=",
+                            "Variable(levelsList[LVL_BTN.Variable(id)].timerSec)"
                           ],
                           "subInstructions": []
                         }
@@ -4471,7 +4550,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "level info",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4590,76 +4669,6 @@
                         "SceneWindowHeight() / 2"
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "levelName",
-                        "=",
-                        "modalWrapper.CenterX()",
-                        "=",
-                        "modalWrapper.BoundingBoxTop() + 25"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "bestTime",
-                        "=",
-                        "levelName.CenterX()",
-                        "=",
-                        "levelName.BoundingBoxBottom() + 40"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "timerWrapper",
-                        "=",
-                        "modalWrapper.CenterX()",
-                        "=",
-                        "bestTime.BoundingBoxBottom() + 30"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "closeBtn",
-                        "=",
-                        "modalWrapper.BoundingBoxRight() - 30",
-                        "=",
-                        "modalWrapper.BoundingBoxTop() + 30"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "playBTN",
-                        "=",
-                        "modalWrapper.CenterX()",
-                        "=",
-                        "modalWrapper.BoundingBoxBottom() - playBTN.Height() / 2 - 20"
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4678,11 +4687,81 @@
                     "value": "SetCenter"
                   },
                   "parameters": [
+                    "levelName",
+                    "=",
+                    "modalWrapper.CenterX()",
+                    "=",
+                    "modalWrapper.BoundingBoxTop() + 25"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "bestTime",
+                    "=",
+                    "levelName.CenterX()",
+                    "=",
+                    "levelName.BoundingBoxBottom() + 40"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "timerWrapper",
+                    "=",
+                    "modalWrapper.CenterX()",
+                    "=",
+                    "bestTime.BoundingBoxBottom() + 30"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
                     "levelTime",
                     "=",
                     "timerWrapper.BoundingBoxCenterX()",
                     "=",
                     "timerWrapper.BoundingBoxCenterY()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "closeBtn",
+                    "=",
+                    "modalWrapper.BoundingBoxRight() - 30",
+                    "=",
+                    "modalWrapper.BoundingBoxTop() + 30"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "playBTN",
+                    "=",
+                    "modalWrapper.CenterX()",
+                    "=",
+                    "modalWrapper.BoundingBoxBottom() - playBTN.Height() / 2 - 20"
                   ],
                   "subInstructions": []
                 }
@@ -4975,6 +5054,18 @@
                       },
                       "parameters": [
                         "LVL_BTN",
+                        "disabled",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
                         "isOpen",
                         "True"
                       ],
@@ -4991,21 +5082,69 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "MAZE_NUMBER",
-                    "=",
-                    "LVL_BTN.Variable(id)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "UI",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "UI",
+                            "disabled",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "MAZE_NUMBER",
+                        "=",
+                        "LVL_BTN.Variable(id)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -5049,10 +5188,10 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarSceneTxt"
+                        "value": "TextObject::String"
                       },
                       "parameters": [
-                        "currentLvlTime",
+                        "levelTime",
                         "=",
                         "\"- : -\""
                       ],
@@ -5104,12 +5243,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarSceneTxt"
+                        "value": "TextObject::String"
                       },
                       "parameters": [
-                        "currentLvlTime",
+                        "levelTime",
                         "=",
-                        "ToString(LVL_BTN.Variable(timerMin)) + \":\" + ToString(LVL_BTN.Variable(timerSec))"
+                        "ToString(LVL_BTN.Variable(timerMin)) + \" : \" + ToString(LVL_BTN.Variable(timerSec))"
                       ],
                       "subInstructions": []
                     }
@@ -5178,6 +5317,81 @@
                   "subInstructions": []
                 }
               ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "LVL_BTN",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "LVL_BTN",
+                        "disabled",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "playBTN",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": []
             }
           ],
@@ -5236,7 +5450,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "lvlInfo",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -13252,7 +13466,31 @@
                         "1"
                       ],
                       "subInstructions": []
-                    },
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "сохранение времени прохождения",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
                       "type": {
                         "inverted": false,
