@@ -770,6 +770,132 @@
         "name": "sprites\\modalWrapper.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/tail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\tail.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/loader/blackLoader-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\loader\\blackLoader-10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "sound/timer.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sound\\timer.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
+      },
+      {
+        "file": "sound/Impact - Lightweight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sound\\Impact - Lightweight.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2720,6 +2846,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "loader",
+          "locked": false,
+          "name": "blackLoader",
+          "persistentUuid": "0e34e4fd-6e16-4a93-9579-9f6d84f52869",
+          "width": 0,
+          "x": -64,
+          "y": 112,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3428,6 +3570,415 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "name": "blackLoader",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "close",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.05000000074505806,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -3437,7 +3988,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3512,6 +4063,55 @@
                     "155"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"loader\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "SceneWindowHeight()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "SceneWindowWidth()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "0",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3576,7 +4176,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "SAVE & LOAD",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4894,7 +5494,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "handle click",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4932,6 +5532,17 @@
                       "parameters": [
                         "UI",
                         "\"disabled\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "lvlInfoIsOpen",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -4972,15 +5583,35 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SourisSurObjet"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "backBTN",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "backBTN",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "lvlInfoIsOpen",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -5054,20 +5685,19 @@
                       },
                       "parameters": [
                         "LVL_BTN",
-                        "disabled",
-                        ""
+                        "isOpen",
+                        "True"
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ObjectVariableAsBoolean"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "LVL_BTN",
-                        "isOpen",
-                        "True"
+                        "lvlInfoIsOpen",
+                        "False"
                       ],
                       "subInstructions": []
                     }
@@ -5084,46 +5714,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "UI",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "UI",
-                            "disabled",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -5378,21 +5968,112 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"game\"",
-                    "yes"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "blackLoader",
+                        "\"close\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "blackLoader"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"loader\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AnimationEnded"
+                              },
+                              "parameters": [
+                                "blackLoader"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AnimationName"
+                              },
+                              "parameters": [
+                                "blackLoader",
+                                "\"close\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"game\"",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -5450,6 +6131,17 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "lvlInfo",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": -2147483632,
+          "ambientLightColorG": 6031344,
+          "ambientLightColorR": 10072144,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "loader",
           "visibility": false,
           "cameras": [],
           "effects": []
@@ -5565,6 +6257,16 @@
           "name": "gameFinished",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "startTimer",
+          "type": "number",
+          "value": 4
+        },
+        {
+          "name": "gameIsStarted",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -5625,8 +6327,8 @@
           "name": "wispLight",
           "persistentUuid": "dd1c0d6f-7e6d-48fa-ae67-fef745ad60e3",
           "width": 0,
-          "x": 826,
-          "y": -55,
+          "x": 1061,
+          "y": -86,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -6084,6 +6786,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "loader",
+          "locked": false,
+          "name": "blackLoader",
+          "persistentUuid": "ca26f3ed-b804-4246-ac13-041a544c0927",
+          "width": 0,
+          "x": -78,
+          "y": 148,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "startTimer",
+          "persistentUuid": "27aa5639-dff9-4d67-8f9a-c8394fcc9075",
+          "width": 0,
+          "x": 168,
+          "y": 311,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6298,7 +7032,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 500,
+            "radius": 700,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -11899,38 +12633,38 @@
                         ],
                         [
                           {
-                            "x": 149.30889892578125,
-                            "y": 24.230770111083984
+                            "x": 160,
+                            "y": 15.595703125
                           },
                           {
-                            "x": 155.84735107421875,
-                            "y": 21.923076629638672
+                            "x": 162.1875,
+                            "y": 16.533203125
                           },
                           {
-                            "x": 155.84735107421875,
-                            "y": 30
+                            "x": 162.1875,
+                            "y": 49.970703125
                           },
                           {
-                            "x": 150.46273803710938,
-                            "y": 31.538461685180664
+                            "x": 159.6875,
+                            "y": 48.720703125
                           }
                         ],
                         [
                           {
-                            "x": 150.46273803710938,
-                            "y": 35.769229888916016
+                            "x": 144.0625,
+                            "y": 47.783203125
                           },
                           {
-                            "x": 155.84735107421875,
-                            "y": 35.769229888916016
+                            "x": 161.25,
+                            "y": 47.470703125
                           },
                           {
-                            "x": 156.61659240722656,
-                            "y": 43.07692337036133
+                            "x": 161.875,
+                            "y": 50.283203125
                           },
                           {
-                            "x": 150.078125,
-                            "y": 41.92307662963867
+                            "x": 144.375,
+                            "y": 50.595703125
                           }
                         ],
                         [
@@ -12148,6 +12882,852 @@
                             "x": 161.23196411132812,
                             "y": 18.461538314819336
                           }
+                        ],
+                        [
+                          {
+                            "x": 95.625,
+                            "y": 64.970703125
+                          },
+                          {
+                            "x": 98.4375,
+                            "y": 64.033203125
+                          },
+                          {
+                            "x": 98.125,
+                            "y": 82.158203125
+                          },
+                          {
+                            "x": 95.3125,
+                            "y": 82.783203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 111.5625,
+                            "y": 49.658203125
+                          },
+                          {
+                            "x": 114.375,
+                            "y": 49.970703125
+                          },
+                          {
+                            "x": 114.0625,
+                            "y": 113.720703125
+                          },
+                          {
+                            "x": 111.5625,
+                            "y": 114.033203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 175.9375,
+                            "y": 17.470703125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 15.283203125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 80.908203125
+                          },
+                          {
+                            "x": 175.625,
+                            "y": 80.595703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 129.375,
+                            "y": 64.033203125
+                          },
+                          {
+                            "x": 161.5625,
+                            "y": 64.033203125
+                          },
+                          {
+                            "x": 161.5625,
+                            "y": 66.533203125
+                          },
+                          {
+                            "x": 127.1875,
+                            "y": 65.908203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 143.4375,
+                            "y": 65.908203125
+                          },
+                          {
+                            "x": 145.9375,
+                            "y": 65.283203125
+                          },
+                          {
+                            "x": 145.9375,
+                            "y": 114.345703125
+                          },
+                          {
+                            "x": 143.75,
+                            "y": 114.033203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 159.6875,
+                            "y": 79.345703125
+                          },
+                          {
+                            "x": 193.125,
+                            "y": 79.345703125
+                          },
+                          {
+                            "x": 192.8125,
+                            "y": 82.158203125
+                          },
+                          {
+                            "x": 159.375,
+                            "y": 82.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 191.875,
+                            "y": 0.908203125
+                          },
+                          {
+                            "x": 194,
+                            "y": 0
+                          },
+                          {
+                            "x": 194,
+                            "y": 194
+                          },
+                          {
+                            "x": 191.5625,
+                            "y": 193.408203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 145.625,
+                            "y": 95.908203125
+                          },
+                          {
+                            "x": 178.75,
+                            "y": 95.908203125
+                          },
+                          {
+                            "x": 178.4375,
+                            "y": 97.783203125
+                          },
+                          {
+                            "x": 145.3125,
+                            "y": 98.095703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 113.4375,
+                            "y": 79.970703125
+                          },
+                          {
+                            "x": 130,
+                            "y": 80.283203125
+                          },
+                          {
+                            "x": 129.0625,
+                            "y": 82.470703125
+                          },
+                          {
+                            "x": 113.125,
+                            "y": 82.158203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 127.5,
+                            "y": 81.533203125
+                          },
+                          {
+                            "x": 130.3125,
+                            "y": 80.595703125
+                          },
+                          {
+                            "x": 130,
+                            "y": 97.158203125
+                          },
+                          {
+                            "x": 127.5,
+                            "y": 97.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.9375,
+                            "y": 79.658203125
+                          },
+                          {
+                            "x": 65.9375,
+                            "y": 79.658203125
+                          },
+                          {
+                            "x": 64.375,
+                            "y": 82.470703125
+                          },
+                          {
+                            "x": 15.625,
+                            "y": 82.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 63.4375,
+                            "y": 81.220703125
+                          },
+                          {
+                            "x": 65.9375,
+                            "y": 80.283203125
+                          },
+                          {
+                            "x": 66.25,
+                            "y": 98.408203125
+                          },
+                          {
+                            "x": 63.75,
+                            "y": 98.720703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 79.6875,
+                            "y": 79.970703125
+                          },
+                          {
+                            "x": 82.1875,
+                            "y": 79.658203125
+                          },
+                          {
+                            "x": 82.1875,
+                            "y": 114.345703125
+                          },
+                          {
+                            "x": 79.6875,
+                            "y": 111.533203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 81.25,
+                            "y": 95.595703125
+                          },
+                          {
+                            "x": 112.5,
+                            "y": 95.595703125
+                          },
+                          {
+                            "x": 112.5,
+                            "y": 97.783203125
+                          },
+                          {
+                            "x": 81.25,
+                            "y": 98.095703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 47.5,
+                            "y": 81.220703125
+                          },
+                          {
+                            "x": 50,
+                            "y": 81.220703125
+                          },
+                          {
+                            "x": 50,
+                            "y": 144.033203125
+                          },
+                          {
+                            "x": 47.5,
+                            "y": 145.595703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.75,
+                            "y": 111.845703125
+                          },
+                          {
+                            "x": 80.9375,
+                            "y": 111.533203125
+                          },
+                          {
+                            "x": 82.1875,
+                            "y": 113.720703125
+                          },
+                          {
+                            "x": 49.375,
+                            "y": 114.033203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 95.625,
+                            "y": 111.845703125
+                          },
+                          {
+                            "x": 98.125,
+                            "y": 111.533203125
+                          },
+                          {
+                            "x": 98.125,
+                            "y": 128.095703125
+                          },
+                          {
+                            "x": 95.9375,
+                            "y": 129.345703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 97.5,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 146.25,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 144.375,
+                            "y": 129.970703125
+                          },
+                          {
+                            "x": 95.3125,
+                            "y": 129.658203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 127.5,
+                            "y": 111.533203125
+                          },
+                          {
+                            "x": 130,
+                            "y": 111.533203125
+                          },
+                          {
+                            "x": 130,
+                            "y": 128.408203125
+                          },
+                          {
+                            "x": 127.5,
+                            "y": 127.783203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 159.6875,
+                            "y": 112.470703125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 111.845703125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 114.345703125
+                          },
+                          {
+                            "x": 161.25,
+                            "y": 114.345703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 159.6875,
+                            "y": 112.783203125
+                          },
+                          {
+                            "x": 162.1875,
+                            "y": 113.095703125
+                          },
+                          {
+                            "x": 162.1875,
+                            "y": 177.470703125
+                          },
+                          {
+                            "x": 159.6875,
+                            "y": 176.533203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 175.9375,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 192.8125,
+                            "y": 127.470703125
+                          },
+                          {
+                            "x": 193.125,
+                            "y": 130.283203125
+                          },
+                          {
+                            "x": 175.9375,
+                            "y": 130.283203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 143.4375,
+                            "y": 128.720703125
+                          },
+                          {
+                            "x": 145.9375,
+                            "y": 128.408203125
+                          },
+                          {
+                            "x": 145.9375,
+                            "y": 144.345703125
+                          },
+                          {
+                            "x": 143.75,
+                            "y": 146.220703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 144.6875,
+                            "y": 144.033203125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 144.033203125
+                          },
+                          {
+                            "x": 176.875,
+                            "y": 145.908203125
+                          },
+                          {
+                            "x": 144.375,
+                            "y": 146.220703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 175.625,
+                            "y": 145.283203125
+                          },
+                          {
+                            "x": 178.125,
+                            "y": 144.658203125
+                          },
+                          {
+                            "x": 177.8125,
+                            "y": 162.470703125
+                          },
+                          {
+                            "x": 175.625,
+                            "y": 162.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0.9375,
+                            "y": 95.908203125
+                          },
+                          {
+                            "x": 33.75,
+                            "y": 95.908203125
+                          },
+                          {
+                            "x": 32.5,
+                            "y": 97.783203125
+                          },
+                          {
+                            "x": 0.3125,
+                            "y": 98.095703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 31.875,
+                            "y": 97.158203125
+                          },
+                          {
+                            "x": 33.75,
+                            "y": 97.158203125
+                          },
+                          {
+                            "x": 34.0625,
+                            "y": 113.408203125
+                          },
+                          {
+                            "x": 31.5625,
+                            "y": 114.345703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.625,
+                            "y": 112.158203125
+                          },
+                          {
+                            "x": 18.125,
+                            "y": 112.158203125
+                          },
+                          {
+                            "x": 17.8125,
+                            "y": 128.720703125
+                          },
+                          {
+                            "x": 15.9375,
+                            "y": 129.345703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0.9375,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 49.0625,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 48.75,
+                            "y": 129.970703125
+                          },
+                          {
+                            "x": 0.625,
+                            "y": 130.283203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 31.5625,
+                            "y": 129.033203125
+                          },
+                          {
+                            "x": 34.0625,
+                            "y": 128.720703125
+                          },
+                          {
+                            "x": 34.0625,
+                            "y": 160.283203125
+                          },
+                          {
+                            "x": 31.5625,
+                            "y": 162.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 48.75,
+                            "y": 143.408203125
+                          },
+                          {
+                            "x": 66.25,
+                            "y": 143.720703125
+                          },
+                          {
+                            "x": 65.625,
+                            "y": 145.908203125
+                          },
+                          {
+                            "x": 47.8125,
+                            "y": 145.595703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 63.125,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 82.1875,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 80.3125,
+                            "y": 130.595703125
+                          },
+                          {
+                            "x": 63.4375,
+                            "y": 130.283203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 79.6875,
+                            "y": 129.033203125
+                          },
+                          {
+                            "x": 81.875,
+                            "y": 127.783203125
+                          },
+                          {
+                            "x": 81.875,
+                            "y": 178.095703125
+                          },
+                          {
+                            "x": 79.375,
+                            "y": 178.095703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 81.25,
+                            "y": 143.720703125
+                          },
+                          {
+                            "x": 130.3125,
+                            "y": 144.033203125
+                          },
+                          {
+                            "x": 128.4375,
+                            "y": 146.220703125
+                          },
+                          {
+                            "x": 80.9375,
+                            "y": 146.220703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 127.8125,
+                            "y": 144.970703125
+                          },
+                          {
+                            "x": 130,
+                            "y": 144.345703125
+                          },
+                          {
+                            "x": 130,
+                            "y": 177.158203125
+                          },
+                          {
+                            "x": 127.8125,
+                            "y": 178.095703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 129.375,
+                            "y": 176.220703125
+                          },
+                          {
+                            "x": 160.9375,
+                            "y": 175.908203125
+                          },
+                          {
+                            "x": 161.875,
+                            "y": 177.783203125
+                          },
+                          {
+                            "x": 128.4375,
+                            "y": 177.470703125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 175.9375,
+                            "y": 175.908203125
+                          },
+                          {
+                            "x": 178.4375,
+                            "y": 175.595703125
+                          },
+                          {
+                            "x": 178.4375,
+                            "y": 194
+                          },
+                          {
+                            "x": 175.3125,
+                            "y": 194
+                          }
+                        ],
+                        [
+                          {
+                            "x": 113.4375,
+                            "y": 192.158203125
+                          },
+                          {
+                            "x": 194,
+                            "y": 192.158203125
+                          },
+                          {
+                            "x": 194,
+                            "y": 194
+                          },
+                          {
+                            "x": 112.8125,
+                            "y": 194
+                          }
+                        ],
+                        [
+                          {
+                            "x": 111.875,
+                            "y": 161.220703125
+                          },
+                          {
+                            "x": 113.75,
+                            "y": 159.970703125
+                          },
+                          {
+                            "x": 114.0625,
+                            "y": 194
+                          },
+                          {
+                            "x": 111.5625,
+                            "y": 194
+                          }
+                        ],
+                        [
+                          {
+                            "x": 129.6875,
+                            "y": 160.283203125
+                          },
+                          {
+                            "x": 145.9375,
+                            "y": 159.970703125
+                          },
+                          {
+                            "x": 146.25,
+                            "y": 162.158203125
+                          },
+                          {
+                            "x": 128.75,
+                            "y": 162.158203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 95.9375,
+                            "y": 159.658203125
+                          },
+                          {
+                            "x": 113.4375,
+                            "y": 159.970703125
+                          },
+                          {
+                            "x": 112.8125,
+                            "y": 162.158203125
+                          },
+                          {
+                            "x": 95.9375,
+                            "y": 162.158203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 33.125,
+                            "y": 159.658203125
+                          },
+                          {
+                            "x": 80.3125,
+                            "y": 159.345703125
+                          },
+                          {
+                            "x": 80.625,
+                            "y": 161.533203125
+                          },
+                          {
+                            "x": 31.5625,
+                            "y": 162.158203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 15.625,
+                            "y": 143.720703125
+                          },
+                          {
+                            "x": 18.125,
+                            "y": 143.720703125
+                          },
+                          {
+                            "x": 17.8125,
+                            "y": 175.908203125
+                          },
+                          {
+                            "x": 15.625,
+                            "y": 177.783203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 17.1875,
+                            "y": 176.220703125
+                          },
+                          {
+                            "x": 66.25,
+                            "y": 175.908203125
+                          },
+                          {
+                            "x": 65,
+                            "y": 178.095703125
+                          },
+                          {
+                            "x": 15.625,
+                            "y": 178.408203125
+                          }
+                        ],
+                        [
+                          {
+                            "x": 64.375,
+                            "y": 177.470703125
+                          },
+                          {
+                            "x": 65.9375,
+                            "y": 176.533203125
+                          },
+                          {
+                            "x": 65.9375,
+                            "y": 194
+                          },
+                          {
+                            "x": 63.75,
+                            "y": 194
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0.625,
+                            "y": 191.845703125
+                          },
+                          {
+                            "x": 97.5,
+                            "y": 191.533203125
+                          },
+                          {
+                            "x": 97.8125,
+                            "y": 194
+                          },
+                          {
+                            "x": 0,
+                            "y": 194
+                          }
+                        ],
+                        [
+                          {
+                            "x": 95.625,
+                            "y": 175.595703125
+                          },
+                          {
+                            "x": 98.125,
+                            "y": 175.908203125
+                          },
+                          {
+                            "x": 98.4375,
+                            "y": 194
+                          },
+                          {
+                            "x": 95.9375,
+                            "y": 194
+                          }
                         ]
                       ]
                     }
@@ -12361,6 +13941,35 @@
             }
           ],
           "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\tail.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 57,
+                        "y": 57.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "",
               "useMultipleDirections": false,
@@ -13066,9 +14675,950 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "startTimer",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "3",
+          "font": "SquadaOne-Regular.ttf",
+          "characterSize": 72,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "blackLoader",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.05000000074505806,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "close",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.05000000074505806,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\loader\\blackLoader.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "START",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "SceneWindowWidth()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "SceneWindowHeight()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "blackLoader",
+                    "=",
+                    "0",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::Opacity"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"loader\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "blackLoader",
+                        "\"open\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "blackLoader"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"startTimer\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AnimationName"
+                              },
+                              "parameters": [
+                                "blackLoader",
+                                "\"open\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AnimationEnded"
+                              },
+                              "parameters": [
+                                "blackLoader"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"loader\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "startTimer",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() / 2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"startTimer\"",
+                    ">=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "startTimer",
+                    "=",
+                    "255"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "startTimer",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "sound\\timer.ogg",
+                        "",
+                        "100",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "=",
+                        "VariableString(startTimer)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"startTimer\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "sound\\timer.ogg",
+                        "",
+                        "100",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "=",
+                        "\"light!\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"startTimer\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "<",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "sound\\Impact - Lightweight.wav",
+                        "",
+                        "80",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"startTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "\"tail\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "\"trace\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "timer",
+                        "\"gameTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "gameIsStarted",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -13607,13 +16157,33 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "DraggableBehavior::Dragged"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "controllerJoystick",
-                        "Draggable"
-                      ],
-                      "subInstructions": []
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "gameIsStarted",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DraggableBehavior::Dragged"
+                          },
+                          "parameters": [
+                            "controllerJoystick",
+                            "Draggable"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
                     }
                   ],
                   "actions": [
@@ -13657,48 +16227,6 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "\"tail\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "\"trace\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "inverted": true,
                     "value": "Arret"
                   },
@@ -13716,7 +16244,7 @@
                     "PLAYER",
                     "\"tail\"",
                     ">=",
-                    "0.03"
+                    "0.02"
                   ],
                   "subInstructions": []
                 }
@@ -13754,7 +16282,7 @@
                         "\"tail\"",
                         "0",
                         "\"linear\"",
-                        "500",
+                        "300",
                         "yes"
                       ],
                       "subInstructions": []
@@ -14017,15 +16545,35 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SourisSurObjet"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "flagBTN",
-                        "",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "gameIsStarted",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "flagBTN",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
                     },
                     {
                       "type": {
@@ -14087,17 +16635,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "timer",
-                    "\"gameTimer\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -15281,15 +17818,35 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SourisSurObjet"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "pauseBtn",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "gameIsStarted",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "pauseBtn",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -15787,7 +18344,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "FINISH",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16278,6 +18835,17 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "homeConfirm",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 33,
+          "ambientLightColorG": 6031344,
+          "ambientLightColorR": 10182544,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "loader",
           "visibility": false,
           "cameras": [],
           "effects": []
