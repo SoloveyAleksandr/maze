@@ -986,6 +986,24 @@
         "name": "sprites\\coin\\Gold_10.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/UI/soundOff.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\UI\\soundOff.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/UI/soundOn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\UI\\soundOn.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1002,6 +1020,11 @@
       "name": "lastLVL",
       "type": "number",
       "value": 8
+    },
+    {
+      "name": "soundOn",
+      "type": "boolean",
+      "value": true
     }
   ],
   "layouts": [
@@ -1028,7 +1051,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2291666252136215,
+        "zoomFactor": 0.4579999588012677,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1040,6 +1063,9 @@
             },
             {
               "name": "settingsBTN"
+            },
+            {
+              "name": "soundBtn"
             }
           ]
         }
@@ -1122,22 +1148,6 @@
           "height": 0,
           "layer": "UI",
           "locked": false,
-          "name": "settingsBTN",
-          "persistentUuid": "31d2fb99-0302-43aa-b76b-a3ab1f96bc43",
-          "width": 0,
-          "x": 15,
-          "y": 15,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "UI",
-          "locked": false,
           "name": "playBTN",
           "persistentUuid": "86929d8f-21a7-43a8-9a69-23c0335fe267",
           "width": 0,
@@ -1176,6 +1186,22 @@
           "x": 184,
           "y": 729,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "soundBtn",
+          "persistentUuid": "8439e9ff-fa0e-41bc-9c66-ad67b24df4d8",
+          "width": 0,
+          "x": 9,
+          "y": 23,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1754,6 +1780,115 @@
               ]
             }
           ]
+        },
+        {
+          "name": "modalWrapper",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\modalWrapper.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "soundBtn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\soundOn.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\soundOff.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1763,7 +1898,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1859,7 +1994,7 @@
                     "value": "MettreXY"
                   },
                   "parameters": [
-                    "settingsBTN",
+                    "soundBtn",
                     "=",
                     "15",
                     "=",
@@ -1953,8 +2088,8 @@
                   "parameters": [
                     "",
                     "btnLight",
-                    "settingsBTN.BoundingBoxCenterX()",
-                    "settingsBTN.BoundingBoxCenterY()",
+                    "soundBtn.BoundingBoxCenterX()",
+                    "soundBtn.BoundingBoxCenterY()",
                     "\"Lighting\""
                   ],
                   "subInstructions": []
@@ -2152,7 +2287,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "handle click",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2165,15 +2300,35 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SourisSurObjet"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "UI",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "UI",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "soundOn",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -2239,6 +2394,127 @@
                     "",
                     "\"levelsMenu\"",
                     "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "sound",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ToggleGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -4307,7 +4583,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "SAVE & LOAD",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5676,6 +5952,17 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "soundOn",
+                        "True"
+                      ],
+                      "subInstructions": []
                     }
                   ]
                 },
@@ -6297,7 +6584,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.34266668500900266,
+        "zoomFactor": 0.13133333005905207,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6341,6 +6628,9 @@
             },
             {
               "name": "helpBtn"
+            },
+            {
+              "name": "soundBtn"
             }
           ]
         },
@@ -6441,25 +6731,9 @@
           "name": "PLAYER",
           "persistentUuid": "6e8fae1c-42aa-4fd1-b699-4ed5d08f5433",
           "width": 0,
-          "x": 773,
+          "x": 902,
           "y": 2,
           "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "wispLight",
-          "persistentUuid": "dd1c0d6f-7e6d-48fa-ae67-fef745ad60e3",
-          "width": 0,
-          "x": 1204,
-          "y": -257,
-          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6473,8 +6747,8 @@
           "name": "finishLight",
           "persistentUuid": "da94d242-6cea-4644-9d12-2e1d694d125d",
           "width": 0,
-          "x": 230,
-          "y": 1269,
+          "x": 193,
+          "y": 1291,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -6489,8 +6763,8 @@
           "name": "startLight",
           "persistentUuid": "b8aa29d0-7dc8-4129-a019-4aafd261a597",
           "width": 0,
-          "x": 202,
-          "y": -485,
+          "x": 216,
+          "y": -447,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -6500,7 +6774,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50916,
-          "layer": "",
+          "layer": "floor",
           "locked": false,
           "name": "floor",
           "persistentUuid": "ca7ea93e-30e9-4237-82d3-cdd00ed8bc0e",
@@ -6585,7 +6859,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "floor",
           "locked": false,
           "name": "MAZE",
           "persistentUuid": "7776eda0-7a9b-4fe0-a248-c7ff23a00191",
@@ -6673,22 +6947,6 @@
           "x": 82,
           "y": 367,
           "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pause",
-          "locked": false,
-          "name": "helpBtn",
-          "persistentUuid": "bb180b14-6d53-4db0-b1e5-27c64e11ef9c",
-          "width": 0,
-          "x": 244,
-          "y": 353,
-          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6945,6 +7203,22 @@
           "x": 168,
           "y": 311,
           "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pause",
+          "locked": false,
+          "name": "soundBtn",
+          "persistentUuid": "e7662df5-93b1-435b-9470-a5e441e5bbc9",
+          "width": 0,
+          "x": 245,
+          "y": 372,
+          "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14561,9 +14835,9 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 1000,
-            "color": "134;255;0",
-            "debugMode": true,
+            "radius": 150,
+            "color": "239;255;152",
+            "debugMode": false,
             "texture": ""
           }
         },
@@ -15278,6 +15552,75 @@
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "name": "soundBtn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\soundOn.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 33.01042556762695,
+                        "y": 35.36789321899414
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sprites\\UI\\soundOff.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 33.01042556762695,
+                        "y": 35.36789321899414
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -15590,20 +15933,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "sound\\timer.ogg",
-                        "",
-                        "100",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "TextObject::String"
                       },
                       "parameters": [
@@ -15625,7 +15954,43 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "GlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "soundOn",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "sound\\timer.ogg",
+                            "",
+                            "100",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -15657,20 +16022,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "sound\\timer.ogg",
-                        "",
-                        "100",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "TextObject::String"
                       },
                       "parameters": [
@@ -15692,7 +16043,43 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "GlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "soundOn",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "sound\\Impact - Lightweight.wav",
+                            "",
+                            "80",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -15721,20 +16108,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "sound\\Impact - Lightweight.wav",
-                        "",
-                        "80",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -15987,6 +16360,20 @@
                     "finish.CenterY()"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "wispLight",
+                    "PLAYER.BoundingBoxCenterX()",
+                    "PLAYER.BoundingBoxCenterY()",
+                    "\"Lighting\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -16055,56 +16442,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "FixCamera"
-                  },
-                  "parameters": [
-                    "",
-                    "PLAYER",
-                    "MAZE.BoundingBoxLeft() - 50",
-                    "start.BoundingBoxTop() - 50",
-                    "MAZE.BoundingBoxRight() + 50",
-                    "finish.BoundingBoxBottom() + 50",
-                    "",
-                    "\"traces\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ZoomCamera"
                   },
                   "parameters": [
                     "",
                     "0.5",
                     "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ZoomCamera"
-                  },
-                  "parameters": [
-                    "",
-                    "0.5",
-                    "\"traces\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ZoomCamera"
-                  },
-                  "parameters": [
-                    "",
-                    "0.5",
-                    "\"Lighting\"",
                     ""
                   ],
                   "subInstructions": []
@@ -16126,6 +16469,65 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "collision",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "MAZE",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "start",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "finish",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            },
             {
               "disabled": false,
               "folded": false,
@@ -16263,7 +16665,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "rotation",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16285,18 +16687,6 @@
                         "MouseY(\"UI\", 0)",
                         "0",
                         ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "controllerAngle",
-                        "=",
-                        "controllerCenter.Angle()"
                       ],
                       "subInstructions": []
                     }
@@ -16384,7 +16774,7 @@
                       },
                       "parameters": [
                         "PLAYER",
-                        "Variable(controllerAngle)",
+                        "controllerCenter.Angle()",
                         "controllerCenter.Distance(controllerJoystick) * 4",
                         ""
                       ],
@@ -16619,65 +17009,6 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "collision",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SeparateFromObjects"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "MAZE",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SeparateFromObjects"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "start",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SeparateFromObjects"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "finish",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": true,
           "name": "flags",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16796,6 +17127,20 @@
                         "\"\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "flagLight",
+                        "PLAYER.BoundingBoxCenterX()",
+                        "PLAYER.BoundingBoxCenterY()",
+                        "\"Lighting\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -16811,7 +17156,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "TIMER",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16848,14 +17193,6 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
               "events": []
             },
             {
@@ -17114,6 +17451,17 @@
                         "UI",
                         "disabled",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "soundOn",
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -17391,7 +17739,7 @@
                         "value": "SetCenter"
                       },
                       "parameters": [
-                        "helpBtn",
+                        "soundBtn",
                         "=",
                         "SceneWindowWidth() - 100",
                         "=",
@@ -18532,6 +18880,113 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ToggleGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "soundOn",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "soundBtn",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -19142,52 +19597,6 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "help",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "coin",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
               "events": []
             }
           ],
