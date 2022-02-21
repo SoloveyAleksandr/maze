@@ -1004,6 +1004,15 @@
         "name": "sprites\\UI\\soundOn.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/effects/playerParticle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites\\effects\\playerParticle.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6562,18 +6571,18 @@
       ]
     },
     {
-      "b": 0,
+      "b": 141,
       "disableInputWhenNotFocused": true,
       "mangledName": "game",
       "name": "game",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 0,
+      "r": 141,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 0,
+      "v": 141,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -6584,7 +6593,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.13133333005905207,
+        "zoomFactor": 0.21683332519531323,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6687,6 +6696,16 @@
           "name": "prevTimerSec",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "lightCount",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "flagLifeTime",
+          "type": "number",
+          "value": 90000
         }
       ],
       "instances": [
@@ -6699,9 +6718,9 @@
           "name": "start",
           "persistentUuid": "a26daf6c-bbeb-4eef-850d-fc14290c621c",
           "width": 0,
-          "x": 209,
-          "y": -430,
-          "zOrder": 10,
+          "x": 184,
+          "y": -115,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6715,73 +6734,9 @@
           "name": "finish",
           "persistentUuid": "19ad885f-efa8-4d5e-b275-ae5a466a8f09",
           "width": 0,
-          "x": 206,
-          "y": 1276,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "PLAYER",
-          "persistentUuid": "6e8fae1c-42aa-4fd1-b699-4ed5d08f5433",
-          "width": 0,
-          "x": 902,
-          "y": 2,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "finishLight",
-          "persistentUuid": "da94d242-6cea-4644-9d12-2e1d694d125d",
-          "width": 0,
-          "x": 193,
-          "y": 1291,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "startLight",
-          "persistentUuid": "b8aa29d0-7dc8-4129-a019-4aafd261a597",
-          "width": 0,
-          "x": 216,
-          "y": -447,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50916,
-          "layer": "floor",
-          "locked": false,
-          "name": "floor",
-          "persistentUuid": "ca7ea93e-30e9-4237-82d3-cdd00ed8bc0e",
-          "width": 59793,
-          "x": -34582,
-          "y": -26310,
-          "zOrder": 0,
+          "x": 188,
+          "y": 845,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6795,8 +6750,8 @@
           "name": "controllerBG",
           "persistentUuid": "3d787ea7-917d-4abe-88da-1e38c1cf9c0d",
           "width": 0,
-          "x": 667,
-          "y": 1287,
+          "x": 266,
+          "y": 706,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6811,8 +6766,8 @@
           "name": "controllerJoystick",
           "persistentUuid": "366a1d2e-1512-4416-b16f-557d9167dbd9",
           "width": 0,
-          "x": 667,
-          "y": 1286,
+          "x": 266,
+          "y": 705,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -6827,8 +6782,8 @@
           "name": "controllerCenter",
           "persistentUuid": "45d68dbb-2f81-4578-b8a9-4998dbe3e2af",
           "width": 0,
-          "x": 652,
-          "y": 1271,
+          "x": 251,
+          "y": 690,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -6859,14 +6814,14 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "floor",
+          "layer": "",
           "locked": false,
           "name": "MAZE",
           "persistentUuid": "7776eda0-7a9b-4fe0-a248-c7ff23a00191",
           "width": 0,
-          "x": -1011,
-          "y": 354,
-          "zOrder": 19,
+          "x": 153,
+          "y": 368,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7184,8 +7139,8 @@
           "name": "blackLoader",
           "persistentUuid": "ca26f3ed-b804-4246-ac13-041a544c0927",
           "width": 0,
-          "x": -78,
-          "y": 148,
+          "x": -108,
+          "y": 125,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -7219,6 +7174,22 @@
           "x": 245,
           "y": 372,
           "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 958,
+          "layer": "",
+          "locked": false,
+          "name": "floor",
+          "persistentUuid": "ef52e272-ba78-4f8f-b282-17cddf5a2c73",
+          "width": 938,
+          "x": -265,
+          "y": -115,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7429,7 +7400,7 @@
           ]
         },
         {
-          "name": "wispLight",
+          "name": "playerLight",
           "tags": "",
           "type": "Lighting::LightObject",
           "variables": [],
@@ -7441,6 +7412,55 @@
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "additive": false,
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 0,
+          "emitterForceMax": 85,
+          "emitterForceMin": 45,
+          "flow": 50,
+          "maxParticleNb": 200,
+          "name": "playerParticle",
+          "particleAlpha1": 155,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 30,
+          "particleAngle2": 90,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 255,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 1.2000000476837158,
+          "particleLifeTimeMin": 0.30000001192092896,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 90,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tags": "",
+          "tank": 3,
+          "textureParticleName": "sprites\\effects\\playerParticle.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 25,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ]
         },
         {
           "name": "start",
@@ -7477,7 +7497,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 220,
-                        "y": 220
+                        "y": 440
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -7585,6 +7605,20 @@
           ]
         },
         {
+          "name": "startLight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "225;255;0",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
           "name": "finish",
           "tags": "",
           "type": "Sprite",
@@ -7619,7 +7653,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 220,
-                        "y": 220
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -7736,20 +7770,6 @@
           "content": {
             "radius": 500,
             "color": "5;255;0",
-            "debugMode": false,
-            "texture": ""
-          }
-        },
-        {
-          "name": "startLight",
-          "tags": "",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 500,
-            "color": "225;255;0",
             "debugMode": false,
             "texture": ""
           }
@@ -19564,135 +19584,6 @@
           ]
         },
         {
-          "name": "tail",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\tail.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 57,
-                        "y": 57.5
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\trace.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 49,
-                        "y": 49
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "trace",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "LightNight",
-              "name": "Effect",
-              "doubleParameters": {
-                "opacity": 1
-              },
-              "stringParameters": {},
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "sprites\\trace.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 49,
-                        "y": 45
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "flagBTN",
           "tags": "",
           "type": "Sprite",
@@ -20024,18 +19915,13 @@
               "value": false
             }
           ],
-          "effects": [
+          "effects": [],
+          "behaviors": [
             {
-              "effectType": "LightNight",
-              "name": "Effect",
-              "doubleParameters": {
-                "opacity": 1
-              },
-              "stringParameters": {},
-              "booleanParameters": {}
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
-          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -20072,11 +19958,22 @@
           "name": "flagLight",
           "tags": "",
           "type": "Lighting::LightObject",
-          "variables": [],
+          "variables": [
+            {
+              "name": "radius",
+              "type": "number",
+              "value": 600
+            }
+          ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "content": {
-            "radius": 150,
+            "radius": 400,
             "color": "239;255;152",
             "debugMode": false,
             "texture": ""
@@ -20892,21 +20789,68 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::Opacity"
-                  },
-                  "parameters": [
-                    "startTimer",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "скрываем таймер",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::Opacity"
+                      },
+                      "parameters": [
+                        "startTimer",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "позиционирование лоадера",
+                  "comment2": ""
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -20966,6 +20910,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "запуск лодера",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -21015,6 +20974,21 @@
                   "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "завершение лодера",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -21070,6 +21044,21 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "позиционирование таймера",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
@@ -21089,6 +21078,21 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "таймер начала игры",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -21450,85 +21454,340 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "MAZE",
-                    "=",
-                    "GlobalVariable(MAZE_NUMBER)"
-                  ],
-                  "subInstructions": []
+                  "comment": "устанавливаем нужный лабиринт",
+                  "comment2": ""
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeScale"
-                  },
-                  "parameters": [
-                    "MAZE",
-                    "=",
-                    "13.54"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "MAZE",
+                        "=",
+                        "GlobalVariable(MAZE_NUMBER)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "MAZE"
-                  ],
-                  "subInstructions": []
+                  "comment": "размер лабиринта относительно других объектов",
+                  "comment2": ""
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "MAZE",
-                    "=",
-                    "0",
-                    "=",
-                    "0"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "MAZE",
+                        "=",
+                        "13.75"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "start",
-                    "=",
-                    "MAZE.PointX(\"start\")",
-                    "=",
-                    "MAZE.PointY(\"start\") - start.Height() / 2"
-                  ],
-                  "subInstructions": []
+                  "comment": "скрываем картинки",
+                  "comment2": ""
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "finish",
-                    "=",
-                    "MAZE.PointX(\"finish\")",
-                    "=",
-                    "MAZE.PointY(\"finish\") + finish.Height() / 2"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "MAZE"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "start"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "finish"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "настройки для пола",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TiledSpriteObject::Width"
+                      },
+                      "parameters": [
+                        "floor",
+                        "=",
+                        "MAZE.Width() * 2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TiledSpriteObject::Height"
+                      },
+                      "parameters": [
+                        "floor",
+                        "=",
+                        "MAZE.Height() * 2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "start",
+                        "=",
+                        "MAZE.PointX(\"start\")",
+                        "=",
+                        "MAZE.PointY(\"start\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "finish",
+                        "=",
+                        "MAZE.PointX(\"finish\")",
+                        "=",
+                        "MAZE.PointY(\"finish\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "floor",
+                        "=",
+                        "MAZE.BoundingBoxCenterX()",
+                        "=",
+                        "MAZE.BoundingBoxCenterY()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "освещение старта и финиша",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "startLight",
+                        "start.BoundingBoxCenterX()",
+                        "start.BoundingBoxCenterY()",
+                        "\"Lighting\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "finishLight",
+                        "finish.BoundingBoxCenterX()",
+                        "finish.BoundingBoxCenterY()",
+                        "\"Lighting\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -21540,84 +21799,150 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "light / player",
+          "name": "PLAYER",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "1",
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "PLAYER",
-                    "=",
-                    "start.CenterX()",
-                    "=",
-                    "start.CenterY()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "startLight",
-                    "=",
-                    "start.CenterX()",
-                    "=",
-                    "start.CenterY()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "finishLight",
-                    "=",
-                    "finish.CenterX()",
-                    "=",
-                    "finish.CenterY()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "wispLight",
-                    "PLAYER.BoundingBoxCenterX()",
-                    "PLAYER.BoundingBoxCenterY()",
-                    "\"Lighting\""
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "создаем игрока",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "PLAYER",
+                        "start.BoundingBoxCenterX()",
+                        "start.BoundingBoxCenterY()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "=",
+                        "1000"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "создаем подсветку игрока",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "playerLight",
+                        "PLAYER.BoundingBoxCenterX()",
+                        "PLAYER.BoundingBoxCenterY()",
+                        "\"Lighting\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "перемещение света за игроком",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -21631,11 +21956,11 @@
                     "value": "MettreXY"
                   },
                   "parameters": [
-                    "wispLight",
+                    "playerLight",
                     "=",
-                    "PLAYER.CenterX()",
+                    "PLAYER.BoundingBoxCenterX()",
                     "=",
-                    "PLAYER.CenterY()"
+                    "PLAYER.BoundingBoxCenterY()"
                   ],
                   "subInstructions": []
                 }
@@ -21656,6 +21981,21 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "слежение за игроком",
+              "comment2": ""
+            },
             {
               "disabled": false,
               "folded": false,
@@ -21711,63 +22051,79 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
               "disabled": false,
               "folded": false,
-              "name": "collision",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "запрет прохода сквозь коллизии стен",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "MAZE",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "start",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SeparateFromObjects"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "finish",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "MAZE",
+                    ""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "start",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "finish",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
-              "parameters": []
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "позиционирование контроллера",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -21868,6 +22224,21 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "возврат джойстика в центр",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -21901,131 +22272,162 @@
               "events": []
             },
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
               "disabled": false,
-              "folded": true,
-              "name": "rotation",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "контроль вращения игрока",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "RotateTowardPosition"
-                      },
-                      "parameters": [
-                        "controllerCenter",
-                        "MouseX(\"UI\", 0)",
-                        "MouseY(\"UI\", 0)",
-                        "0",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "RotateTowardPosition"
+                  },
+                  "parameters": [
+                    "controllerCenter",
+                    "MouseX(\"UI\", 0)",
+                    "MouseY(\"UI\", 0)",
+                    "0",
+                    ""
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "controllerJoystick",
-                        "controllerCenter",
-                        "controllerBG.Width() / 2",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreAutour"
-                      },
-                      "parameters": [
-                        "controllerJoystick",
-                        "controllerCenter",
-                        "controllerBG.Width() / 2",
-                        "controllerCenter.Angle()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "gameIsStarted",
-                            "True"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "DraggableBehavior::Dragged"
-                          },
-                          "parameters": [
-                            "controllerJoystick",
-                            "Draggable"
-                          ],
-                          "subInstructions": []
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "controllerCenter.Angle()",
-                        "controllerCenter.Distance(controllerJoystick) * 4",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "subInstructions": []
                 }
               ],
-              "parameters": []
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "контроль вылета джойстика за границу",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "controllerCenter",
+                    "controllerBG.Width() / 2",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreAutour"
+                  },
+                  "parameters": [
+                    "controllerJoystick",
+                    "controllerCenter",
+                    "controllerBG.Width() / 2",
+                    "controllerCenter.Angle()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "движение игрока",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "gameIsStarted",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "controllerJoystick",
+                        "Draggable"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "controllerCenter.Angle()",
+                    "controllerCenter.Distance(controllerJoystick) * 4",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -22041,6 +22443,21 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "партил след",
+              "comment2": ""
+            },
             {
               "disabled": false,
               "folded": false,
@@ -22085,7 +22502,7 @@
                       },
                       "parameters": [
                         "",
-                        "tail",
+                        "playerParticle",
                         "PLAYER.PointX(\"tail\")",
                         "PLAYER.PointY(\"tail\")",
                         "\"\""
@@ -22098,12 +22515,12 @@
                         "value": "Tween::AddObjectOpacityTween"
                       },
                       "parameters": [
-                        "tail",
+                        "playerParticle",
                         "Tween",
                         "\"tail\"",
                         "0",
                         "\"linear\"",
-                        "300",
+                        "500",
                         "yes"
                       ],
                       "subInstructions": []
@@ -22118,120 +22535,16 @@
                         "\"tail\""
                       ],
                       "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "след",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Arret"
-                      },
-                      "parameters": [
-                        "PLAYER"
-                      ],
-                      "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "CompareObjectTimer"
+                        "value": "SetAngle"
                       },
                       "parameters": [
-                        "PLAYER",
-                        "\"trace\"",
-                        ">=",
-                        "0.5"
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "trace",
-                        "PLAYER.PointX(\"tail\")",
-                        "PLAYER.PointY(\"tail\")",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Tween::AddObjectOpacityTween"
-                      },
-                      "parameters": [
-                        "trace",
-                        "Tween",
-                        "\"trace\"",
-                        "50",
-                        "\"linear\"",
-                        "1000",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "PLAYER",
-                        "\"trace\""
+                        "playerParticle",
+                        "=",
+                        "controllerCenter.Angle()"
                       ],
                       "subInstructions": []
                     }
@@ -22249,7 +22562,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "flags",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22270,23 +22583,47 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "flagBTN",
-                    "=",
-                    "SceneWindowWidth() - flagBTN.Width() - 15",
-                    "=",
-                    "controllerBG.BoundingBoxTop() - flagBTN.Height() - 40"
+                  "comment": "позиция кнопки флага",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "flagBTN",
+                        "=",
+                        "SceneWindowWidth() - flagBTN.Width() - 15",
+                        "=",
+                        "controllerBG.BoundingBoxTop() - flagBTN.Height() - 40"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "disabled": false,
@@ -22382,11 +22719,300 @@
                         "\"Lighting\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "flagLight",
+                        "\"lifeTime\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectOpacityTween"
+                          },
+                          "parameters": [
+                            "flag",
+                            "Tween",
+                            "\"flagOpacity\"",
+                            "0",
+                            "\"linear\"",
+                            "Variable(flagLifeTime)",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectVariableTween"
+                          },
+                          "parameters": [
+                            "flagLight",
+                            "Tween",
+                            "\"flagLightRadius\"",
+                            "radius",
+                            "600",
+                            "150",
+                            "\"linear\"",
+                            "Variable(flagLifeTime)",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "создние флага если игрок стоит",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "gameIsStarted",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "flagBTN",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Toujours"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "flag",
+                        "PLAYER.BoundingBoxCenterX()",
+                        "PLAYER.BoundingBoxCenterY()",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "flag",
+                        "\"lifeTime\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "flagLight",
+                        "PLAYER.BoundingBoxCenterX()",
+                        "PLAYER.BoundingBoxCenterY()",
+                        "\"Lighting\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "flagLight",
+                        "\"lifeTime\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Lighting::SetRadius"
+                  },
+                  "parameters": [
+                    "flagLight",
+                    "flagLight.Variable(radius)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "flag",
+                    "\"lifeTime\"",
+                    ">=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "flag",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "flagLight",
+                    "\"lifeTime\"",
+                    ">=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Toujours"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "flagLight",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -22397,7 +23023,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "TIMER",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22418,23 +23044,62 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
                   },
-                  "parameters": [
-                    "timer",
-                    "=",
-                    "15",
-                    "=",
-                    "15"
+                  "comment": "позиция таймера сцены",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "timer",
+                        "=",
+                        "15",
+                        "=",
+                        "15"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "запись знацения таймера",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -22734,52 +23399,6 @@
                 }
               ],
               "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "pauseBtn",
-                    "=",
-                    "SceneWindowWidth() -pauseBtn.Width() - 10",
-                    "=",
-                    "15"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeScale"
-                  },
-                  "parameters": [
-                    "confirmBtns",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
             }
           ],
           "parameters": []
@@ -22811,66 +23430,163 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"pause\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"finish\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"homeConfirm\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "levelNumber",
-                    "=",
-                    "\"LEVEL \" + ToString(GlobalVariable(MAZE_NUMBER) + 1)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "confirmingQuestion",
-                    "=",
-                    "\"LEAVE THE LEVEL \" + ToString(GlobalVariable(MAZE_NUMBER) + 1)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "позиционирование кнопки PAUSE",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "pauseBtn",
+                        "=",
+                        "SceneWindowWidth() -pauseBtn.Width() - 10",
+                        "=",
+                        "15"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "скрытие confirm Buttons",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeScale"
+                      },
+                      "parameters": [
+                        "confirmBtns",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "скрытие дополнительных слоев ",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"pause\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"finish\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"homeConfirm\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "levelNumber",
+                        "=",
+                        "\"LEVEL \" + ToString(GlobalVariable(MAZE_NUMBER) + 1)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "confirmingQuestion",
+                        "=",
+                        "\"LEAVE THE LEVEL \" + ToString(GlobalVariable(MAZE_NUMBER) + 1)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -23270,6 +23986,21 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "если игра не на паузе",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -23594,7 +24325,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "постанова игры на паузу",
+              "comment": "ставим игру на паузу",
               "comment2": ""
             },
             {
@@ -24845,17 +25576,6 @@
         }
       ],
       "layers": [
-        {
-          "ambientLightColorB": 67108864,
-          "ambientLightColorG": 6029040,
-          "ambientLightColorR": 8081768,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "floor",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
         {
           "ambientLightColorB": 32,
           "ambientLightColorG": 0,
