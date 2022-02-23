@@ -1082,7 +1082,7 @@
     {
       "name": "lastLVL",
       "type": "number",
-      "value": 8
+      "value": 11
     },
     {
       "name": "soundOn",
@@ -1207,8 +1207,8 @@
           "name": "bg",
           "persistentUuid": "3838e6a1-36fc-4252-9bc3-ed8445fbbb0d",
           "width": 1665,
-          "x": -659,
-          "y": -593,
+          "x": -743,
+          "y": -604,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -2194,7 +2194,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "12345",
           "font": "SquadaOne-Regular.ttf",
           "characterSize": 22,
@@ -3212,38 +3217,29 @@
                   },
                   "comment": "отрисовка значения",
                   "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "userCredits",
-                        "=",
-                        "VariableString(userCredits)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "userCredits",
+                    "=",
+                    "VariableString(userCredits)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -3586,7 +3582,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "skin buying",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3723,12 +3719,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ModVarSceneTxt"
+                            "value": "JSONToVariableStructure"
                           },
                           "parameters": [
-                            "buyingSkins",
-                            "=",
-                            "VariableString(buyingSkinsJSON.value)"
+                            "VariableString(buyingSkinsJSON)",
+                            "buyingSkins"
                           ],
                           "subInstructions": []
                         }
@@ -4292,66 +4287,327 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetSceneVariableAsBoolean"
+                        "value": "VarScene"
                       },
                       "parameters": [
-                        "buyingSkins[Variable(currentSkin)]",
-                        "True"
+                        "userCredits",
+                        ">=",
+                        "10000"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "EcrireFichierTxt"
-                      },
-                      "parameters": [
-                        "\"mazeSaves\"",
-                        "\"buyingSkins\"",
-                        "ToJSON(buyingSkins)"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "buyingSkins[Variable(currentSkin)]",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "LireFichierExp"
-                      },
-                      "parameters": [
-                        "\"mazeSaves\"",
-                        "\"buyingSkins\"",
-                        "",
-                        "buyingSkins"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"buyingSkins\"",
+                            "ToJSON(buyingSkins)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "userCredits",
+                            "-",
+                            "10000"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "EcrireFichierExp"
+                          },
+                          "parameters": [
+                            "\"mazeSaves\"",
+                            "\"userCredits\"",
+                            "Variable(userCredits)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "selectBtn",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "selectBtn",
+                        "\"price\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "userCredits",
+                        "<",
+                        "10000"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectScaleTween"
+                          },
+                          "parameters": [
+                            "userCredits",
+                            "Tween",
+                            "\"textScale\"",
+                            "2",
+                            "2",
+                            "\"bounce\"",
+                            "0",
+                            "",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectColorTween"
+                          },
+                          "parameters": [
+                            "userCredits",
+                            "Tween",
+                            "\"textColor\"",
+                            "\"255;40;40\"",
+                            "\"bounce\"",
+                            "0",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "1",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "userCredits",
+                    "Tween",
+                    "\"textScale\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectScaleTween"
+                  },
+                  "parameters": [
+                    "userCredits",
+                    "Tween",
+                    "\"textScale\"",
+                    "1",
+                    "1",
+                    "\"bounce\"",
+                    "0",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectColorTween"
+                  },
+                  "parameters": [
+                    "userCredits",
+                    "Tween",
+                    "\"textColor\"",
+                    "\"255;255;255\"",
+                    "\"bounce\"",
+                    "0",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -24759,7 +25015,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "lerp(CameraX(), PLAYER.X(), 0.03)",
+                    "lerp(CameraX(), PLAYER.X(), 0.08)",
                     "",
                     ""
                   ],
@@ -24773,7 +25029,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "lerp(CameraY(), PLAYER.Y(), 0.03)",
+                    "lerp(CameraY(), PLAYER.Y(), 0.08)",
                     "",
                     ""
                   ],
@@ -26041,7 +26297,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "pause",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28530,7 +28786,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "skin change",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28549,6 +28805,39 @@
               },
               "comment": "настройка цвет в зависимости от выбранного скина",
               "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LireFichierExp"
+                  },
+                  "parameters": [
+                    "\"mazeSaves\"",
+                    "\"selectedSkin\"",
+                    "",
+                    "selectedSkin"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -28573,7 +28862,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -28682,7 +28971,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -28791,7 +29080,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -28900,7 +29189,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -29009,7 +29298,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -29118,7 +29407,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
@@ -29227,7 +29516,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "VarScene"
                   },
                   "parameters": [
                     "selectedSkin",
